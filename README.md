@@ -11,9 +11,9 @@ The tables below show two example concepts for the paper: “The
 Standardization of Accounting Language”
 
 The full concept list can be downloaded
-<a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">heret</a>
+<a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>
 
-## COncept 1: ABC Costing
+## Concept 1: ABC Costing
 
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -186,7 +186,7 @@ ManA
 </tbody>
 </table>
 
-## COncept 2: Accounts Payable
+## Concept 2: Accounts Payable
 
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -235,7 +235,7 @@ account payable
 FinA
 </td>
 <td style="text-align:left;">
-IFRS
+GAAP
 </td>
 <td style="text-align:left;">
 CF
@@ -264,7 +264,7 @@ trade account payable
 FinA
 </td>
 <td style="text-align:left;">
-IFRS
+GAAP
 </td>
 <td style="text-align:left;">
 CF
@@ -293,7 +293,7 @@ trade creditor
 FinA
 </td>
 <td style="text-align:left;">
-IFRS
+GAAP
 </td>
 <td style="text-align:left;">
 CF
@@ -322,7 +322,7 @@ trade payable
 FinA
 </td>
 <td style="text-align:left;">
-IFRS
+GAAP
 </td>
 <td style="text-align:left;">
 CF
@@ -342,12 +342,11 @@ CF
 
 # Term List
 
-The table below shows the first 1,000 terms from the term list proposed
-in the paper:
+The table below shows the first ten terms for the paper: “The
+Standardization of Accounting Language”
 
-“The Standardization of Accounting Language”
-<a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">Download
-Term List</a>
+The full concept list can be downloaded
+<a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>
 
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -387,7 +386,7 @@ cat3
 FinA
 </td>
 <td style="text-align:left;">
-IFRS
+GAAP
 </td>
 <td style="text-align:left;">
 CF
@@ -425,7 +424,7 @@ BusA
 FinA
 </td>
 <td style="text-align:left;">
-US GAAP
+GAAP
 </td>
 <td style="text-align:left;">
 </td>
@@ -444,7 +443,7 @@ US GAAP
 FinA
 </td>
 <td style="text-align:left;">
-IFRS
+GAAP
 </td>
 <td style="text-align:left;">
 </td>

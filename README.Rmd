@@ -22,11 +22,13 @@ library(tidyverse)
 library(kableExtra)
 con <- readr::read_rds("0_data/cls_tp_final.rds") %>%
   dplyr::select(cid, concept_name, tid, term, cat1, cat2, cat3, size, avg_ngram, avg_sim, complex_score) %>%
+  dplyr::mutate(cat2 = dplyr::if_else(!is.na(cat2), "GAAP", NA_character_)) %>%
   dplyr::arrange(cid)
 openxlsx::write.xlsx(con, "2_output/concept_list.xlsx", TRUE, TRUE)
 
 ter <- readr::read_rds("0_data/tls_tp_final.rds") %>%
   dplyr::select(tid, term, term_raw, cat1, cat2, cat3) %>%
+    dplyr::mutate(cat2 = dplyr::if_else(!is.na(cat2), "GAAP", NA_character_)) %>%
   dplyr::arrange(tid)
 openxlsx::write.xlsx(ter, "2_output/term_list.xlsx", TRUE, TRUE)
 ```
@@ -35,9 +37,9 @@ openxlsx::write.xlsx(ter, "2_output/term_list.xlsx", TRUE, TRUE)
 The tables below show two example concepts for the paper: "The Standardization of Accounting Language"
 
 The full concept list can be downloaded 
-<a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">heret</a>
+<a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>
 
-##  COncept 1: ABC Costing
+##  Concept 1: ABC Costing
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 con %>%
   dplyr::filter(cid == 1) %>%
@@ -47,7 +49,7 @@ con %>%
   kableExtra::kable_paper() %>%
   kable_styling(font_size = 10)
 ```
-##  COncept 2: Accounts Payable
+##  Concept 2: Accounts Payable
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 con %>%
   dplyr::filter(cid == 2) %>%
@@ -59,10 +61,10 @@ con %>%
 ```
 
 # Term List
-The table below shows the first 1,000 terms from the term list proposed in the paper:
+The table below shows the first ten terms for the paper: "The Standardization of Accounting Language"
 
-"The Standardization of Accounting Language"
-<a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">Download Term List</a>
+The full concept list can be downloaded 
+<a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 ter %>%
