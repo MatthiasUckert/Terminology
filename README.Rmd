@@ -45,7 +45,7 @@ con %>%
   slice(1:10) %>%
   knitr::kable() %>%
   kableExtra::kable_paper() %>%
-  kable_styling(font_size = 11)
+  kable_styling(font_size = 10)
 ```
 
 
@@ -60,7 +60,7 @@ ter %>%
   slice(1:10) %>%
   knitr::kable() %>%
   kableExtra::kable_paper() %>%
-  kable_styling(font_size = 11)
+  kable_styling(font_size = 10)
 
 ```
 
