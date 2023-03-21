@@ -7,21 +7,19 @@ First Test Entry.
 
 # Concept List
 
-The table below shows the first 100 concepts from the concept list
-proposed in the paper:
+The tables below show two example concepts for the paper: “The
+Standardization of Accounting Language”
 
-“The Standardization of Accounting Language”
+The full concept list can be downloaded
+<a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">heret</a>
 
-<a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">download
-concept list</a>
+## COncept 1: ABC Costing
+
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:right;">
 cid
-</th>
-<th style="text-align:left;">
-concept_name
 </th>
 <th style="text-align:right;">
 tid
@@ -39,9 +37,6 @@ cat2
 cat3
 </th>
 <th style="text-align:right;">
-size
-</th>
-<th style="text-align:right;">
 avg_ngram
 </th>
 <th style="text-align:right;">
@@ -57,9 +52,6 @@ complex_score
 <td style="text-align:right;">
 1
 </td>
-<td style="text-align:left;">
-ABC COSTING
-</td>
 <td style="text-align:right;">
 37
 </td>
@@ -74,10 +66,7 @@ ManA
 <td style="text-align:left;">
 </td>
 <td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-2.40
+2.4
 </td>
 <td style="text-align:right;">
 0.7643706
@@ -89,9 +78,6 @@ ManA
 <tr>
 <td style="text-align:right;">
 1
-</td>
-<td style="text-align:left;">
-ABC COSTING
 </td>
 <td style="text-align:right;">
 38
@@ -107,10 +93,7 @@ ManA
 <td style="text-align:left;">
 </td>
 <td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-2.40
+2.4
 </td>
 <td style="text-align:right;">
 0.7643706
@@ -122,9 +105,6 @@ ManA
 <tr>
 <td style="text-align:right;">
 1
-</td>
-<td style="text-align:left;">
-ABC COSTING
 </td>
 <td style="text-align:right;">
 40
@@ -140,10 +120,7 @@ ManA
 <td style="text-align:left;">
 </td>
 <td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-2.40
+2.4
 </td>
 <td style="text-align:right;">
 0.7643706
@@ -155,9 +132,6 @@ ManA
 <tr>
 <td style="text-align:right;">
 1
-</td>
-<td style="text-align:left;">
-ABC COSTING
 </td>
 <td style="text-align:right;">
 920
@@ -173,10 +147,7 @@ ManA
 <td style="text-align:left;">
 </td>
 <td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-2.40
+2.4
 </td>
 <td style="text-align:right;">
 0.7643706
@@ -188,9 +159,6 @@ ManA
 <tr>
 <td style="text-align:right;">
 1
-</td>
-<td style="text-align:left;">
-ABC COSTING
 </td>
 <td style="text-align:right;">
 926
@@ -206,10 +174,7 @@ ManA
 <td style="text-align:left;">
 </td>
 <td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-2.40
+2.4
 </td>
 <td style="text-align:right;">
 0.7643706
@@ -218,12 +183,47 @@ ManA
 0.7342886
 </td>
 </tr>
+</tbody>
+</table>
+
+## COncept 2: Accounts Payable
+
+<table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+cid
+</th>
+<th style="text-align:right;">
+tid
+</th>
+<th style="text-align:left;">
+term
+</th>
+<th style="text-align:left;">
+cat1
+</th>
+<th style="text-align:left;">
+cat2
+</th>
+<th style="text-align:left;">
+cat3
+</th>
+<th style="text-align:right;">
+avg_ngram
+</th>
+<th style="text-align:right;">
+avg_sim
+</th>
+<th style="text-align:right;">
+complex_score
+</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td style="text-align:right;">
 2
-</td>
-<td style="text-align:left;">
-ACCOUNT PAYABLE
 </td>
 <td style="text-align:right;">
 158
@@ -241,24 +241,18 @@ IFRS
 CF
 </td>
 <td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
 2.25
 </td>
 <td style="text-align:right;">
 0.7282598
 </td>
 <td style="text-align:right;">
-0.6762230
+0.676223
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
 2
-</td>
-<td style="text-align:left;">
-ACCOUNT PAYABLE
 </td>
 <td style="text-align:right;">
 48456
@@ -276,24 +270,18 @@ IFRS
 CF
 </td>
 <td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
 2.25
 </td>
 <td style="text-align:right;">
 0.7282598
 </td>
 <td style="text-align:right;">
-0.6762230
+0.676223
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
 2
-</td>
-<td style="text-align:left;">
-ACCOUNT PAYABLE
 </td>
 <td style="text-align:right;">
 48507
@@ -311,24 +299,18 @@ IFRS
 CF
 </td>
 <td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
 2.25
 </td>
 <td style="text-align:right;">
 0.7282598
 </td>
 <td style="text-align:right;">
-0.6762230
+0.676223
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
 2
-</td>
-<td style="text-align:left;">
-ACCOUNT PAYABLE
 </td>
 <td style="text-align:right;">
 48559
@@ -346,50 +328,13 @@ IFRS
 CF
 </td>
 <td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
 2.25
 </td>
 <td style="text-align:right;">
 0.7282598
 </td>
 <td style="text-align:right;">
-0.6762230
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:left;">
-ACCRUAL BASIS OF ACCOUNTING
-</td>
-<td style="text-align:right;">
-425
-</td>
-<td style="text-align:left;">
-accrual basis of accounting
-</td>
-<td style="text-align:left;">
-FinA
-</td>
-<td style="text-align:left;">
-IFRS
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-4.00
-</td>
-<td style="text-align:right;">
-0.9009997
-</td>
-<td style="text-align:right;">
-0.4520118
+0.676223
 </td>
 </tr>
 </tbody>
@@ -401,6 +346,8 @@ The table below shows the first 1,000 terms from the term list proposed
 in the paper:
 
 “The Standardization of Accounting Language”
+<a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">Download
+Term List</a>
 
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
