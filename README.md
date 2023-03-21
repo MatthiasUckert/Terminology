@@ -8,10 +8,10 @@ First Test Entry.
 # Concept List
 
 The tables below show two example concepts for the paper: “The
-Standardization of Accounting Language”
+Standardization of Accounting Language”.
 
 The full concept list can be downloaded
-<a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>
+<a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>.
 
 ## Concept 1: ABC Costing
 
@@ -343,10 +343,10 @@ CF
 # Term List
 
 The table below shows the first ten terms for the paper: “The
-Standardization of Accounting Language”
+Standardization of Accounting Language”.
 
 The full concept list can be downloaded
-<a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>
+<a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
 
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>

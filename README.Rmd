@@ -13,8 +13,8 @@ knitr::opts_chunk$set(
 ```
 
 # About the Paper
-First Test Entry.
 
+First Test Entry.
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 library(DT)
@@ -34,12 +34,13 @@ openxlsx::write.xlsx(ter, "2_output/term_list.xlsx", TRUE, TRUE)
 ```
 
 # Concept List
-The tables below show two example concepts for the paper: "The Standardization of Accounting Language"
 
-The full concept list can be downloaded 
-<a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>
+The tables below show two example concepts for the paper: "The Standardization of Accounting Language".
 
-##  Concept 1: ABC Costing
+The full concept list can be downloaded <a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>.
+
+## Concept 1: ABC Costing
+
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 con %>%
   dplyr::filter(cid == 1) %>%
@@ -49,7 +50,9 @@ con %>%
   kableExtra::kable_paper() %>%
   kable_styling(font_size = 10)
 ```
-##  Concept 2: Accounts Payable
+
+## Concept 2: Accounts Payable
+
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 con %>%
   dplyr::filter(cid == 2) %>%
@@ -61,10 +64,10 @@ con %>%
 ```
 
 # Term List
-The table below shows the first ten terms for the paper: "The Standardization of Accounting Language"
 
-The full concept list can be downloaded 
-<a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>
+The table below shows the first ten terms for the paper: "The Standardization of Accounting Language".
+
+The full concept list can be downloaded <a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 ter %>%
@@ -75,5 +78,3 @@ ter %>%
   kable_styling(font_size = 10)
 
 ```
-
-
