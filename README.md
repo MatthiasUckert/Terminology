@@ -13,6 +13,34 @@ Standardization of Accounting Language”.
 The full concept list can be downloaded
 <a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>.
 
+The concept list includes the following columns:
+
+- `cid`: The Concept Identifier
+
+- `tid`: The Term Identifier
+
+- `term`: The standardized Term
+
+- `cat1`: Category 1 which includes “FinA” for Financial Accounting
+  Concepts, “ManA” for Managerial Accounting Concepts and “BusA” for
+  Business Concepts
+
+- `cat2`: Category 2 Indicator column if the concept is a GAAP concept
+
+- `cat3`: Category 3 which includes “IS” for Income Statement Concepts,
+  “BS” for Balance Sheet Concepts and “CF” for Cash Flow Statement
+  Concepts
+
+- `avg_ngram`: The average ngram of all the terms within the concept
+
+- `avg_sim`: Average textual similarity of the terms within the concept
+
+- `size`: The size of the concept (i.e. how many terms are grouped
+  within a concept)
+
+- `complex_score`: Linear combination of size, avg_ngram and avg_sim
+  (Scaled between 0-1)
+
 ## Concept 1: ABC Costing
 
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
@@ -35,6 +63,9 @@ cat2
 </th>
 <th style="text-align:left;">
 cat3
+</th>
+<th style="text-align:right;">
+size
 </th>
 <th style="text-align:right;">
 avg_ngram
@@ -66,6 +97,9 @@ ManA
 <td style="text-align:left;">
 </td>
 <td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
 2.4
 </td>
 <td style="text-align:right;">
@@ -91,6 +125,9 @@ ManA
 <td style="text-align:left;">
 </td>
 <td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+5
 </td>
 <td style="text-align:right;">
 2.4
@@ -120,6 +157,9 @@ ManA
 <td style="text-align:left;">
 </td>
 <td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
 2.4
 </td>
 <td style="text-align:right;">
@@ -147,6 +187,9 @@ ManA
 <td style="text-align:left;">
 </td>
 <td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
 2.4
 </td>
 <td style="text-align:right;">
@@ -172,6 +215,9 @@ ManA
 <td style="text-align:left;">
 </td>
 <td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+5
 </td>
 <td style="text-align:right;">
 2.4
@@ -347,6 +393,26 @@ Standardization of Accounting Language”.
 
 The full concept list can be downloaded
 <a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
+
+The concept list includes the following columns:
+
+- `cid`: The Concept Identifier
+
+- `tid`: The Term Identifier
+
+- `term`: The standardized Term
+
+- `term_raw`: The raw Term
+
+- `cat1`: Category 1 which includes “FinA” for Financial Accounting
+  Concepts, “ManA” for Managerial Accounting Concepts and “BusA” for
+  Business Concepts
+
+- `cat2`: Category 2 Indicator column if the concept is a GAAP concept
+
+- `cat3`: Category 3 which includes “IS” for Income Statement Concepts,
+  “BS” for Balance Sheet Concepts and “CF” for Cash Flow Statement
+  Concepts
 
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
