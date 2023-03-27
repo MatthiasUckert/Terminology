@@ -14,7 +14,9 @@ knitr::opts_chunk$set(
 
 # About the Paper
 
-First Test Entry.
+The following Readme provides additional information and files for the Paper: "The Standardization of Accounting Language".
+
+[bstract.]{.smallcaps} The communication of accounting information requires a special vocabulary (i.e., terminology) and in specialized languages, standardization is considered key to effective and unambiguous communication. We provide the first large sample-based evidence on the level, determinants, and implications of accounting terminology standardization by examining a global sample of more than 330,000 annual reports from 1995 to 2019. Three main takeaways emerge from our analyses. First, cognitive and dialectal causes (e.g., accounting systems and English proficiency) are the most important drivers of terminology standardization. Second, the adoption of a new reference framework of accounting terms or tags (i.e., the introduction of IFRS worldwide and XBRL in the United States) increases standardization but also conceals important linguistics-related heterogeneities. Third, terminology standardization is negatively associated with both the incompleteness within and differences across accounting databases, consistent with the idea of standardized language being instrumental for users in extracting accounting information and reducing information processing costs.
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 library(DT)
@@ -41,32 +43,25 @@ The full concept list can be downloaded <a href="2_output/concept_list.xlsx" dow
 
 The concept list includes the following columns:
 
--   `cid`: The Concept Identifier
-
--   `tid`: The Term Identifier
-
--   `term`: The standardized Term
-
--   `cat1`: Category 1 which includes "FinA" for Financial Accounting Concepts, "ManA" for Managerial Accounting Concepts and "BusA" for Business Concepts
-
--   `cat2`: Category 2 Indicator column if the concept is a GAAP concept
-
--   `cat3`: Category 3 which includes "IS" for Income Statement Concepts, "BS" for Balance Sheet Concepts and "CF" for Cash Flow Statement Concepts
-
--   `avg_ngram`: The average ngram of all the terms within the concept
-
--   `avg_sim`: Average textual similarity of the terms within the concept
-
--   `size`: The size of the concept (i.e. how many terms are grouped within a concept)
-
--   `complex_score`: Linear combination of size, avg_ngram and avg_sim (Scaled between 0-1)
+| Column          | Description                                                                                                                                                     |
+|:--------------|:--------------------------------------------------------|
+| `cid`           | The Concept Identifier                                                                                                                                          |
+| `tid`           | The Term Identifier                                                                                                                                             |
+| `term`          | The standardized Term                                                                                                                                           |
+| `cat1`          | **Category 1:** which includes **"FinA"** for Financial Accounting Concepts, **"ManA"** for Managerial Accounting Concepts and **"BusA"** for Business Concepts |
+| **`cat2`**      | **Category 2:** Indicator column if the concept is a **GAAP** concept                                                                                           |
+| `cat3`          | **Category 3:** which includes **"IS"** for Income Statement Concepts, **"BS"** for Balance Sheet Concepts and **"CF"** for Cash Flow Statement Concepts        |
+| `avg_ngram`     | The average N-Gram of all the terms within the concept (i.e. of how many words a term is composed)                                                              |
+| `avg_sim`       | Average textual similarity of the terms within the concept                                                                                                      |
+| `size`          | The size of the concept (i.e. how many terms are grouped within a concept)                                                                                      |
+| `complex_score` | Linear combination of size, avg_ngram and avg_sim (Scaled between 0-1)                                                                                          |
 
 ## Concept 1: ABC Costing
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 con %>%
   dplyr::filter(cid == 1) %>%
-  dplyr::select(-concept_name, ) %>%
+  dplyr::select(-concept_name) %>%
   dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::if_else(is.na(.), "", .))) %>%
   knitr::kable() %>%
   kableExtra::kable_paper() %>%
@@ -78,7 +73,7 @@ con %>%
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 con %>%
   dplyr::filter(cid == 2) %>%
-  dplyr::select(-concept_name, -size) %>%
+  dplyr::select(-concept_name) %>%
   dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::if_else(is.na(.), "", .))) %>%
   knitr::kable() %>%
   kableExtra::kable_paper() %>%
@@ -93,19 +88,15 @@ The full concept list can be downloaded <a href="2_output/term_list.xlsx" downlo
 
 The concept list includes the following columns:
 
--   `cid`: The Concept Identifier
-
--   `tid`: The Term Identifier
-
--   `term`: The standardized Term
-
--   `term_raw`: The raw Term
-
--   `cat1`: Category 1 which includes "FinA" for Financial Accounting Concepts, "ManA" for Managerial Accounting Concepts and "BusA" for Business Concepts
-
--   `cat2`: Category 2 Indicator column if the concept is a GAAP concept
-
--   `cat3`: Category 3 which includes "IS" for Income Statement Concepts, "BS" for Balance Sheet Concepts and "CF" for Cash Flow Statement Concepts
+| Column     | Description                                                                                                                                                     |
+|:--------------|:--------------------------------------------------------|
+| `cid`      | The Concept Identifier                                                                                                                                          |
+| `tid`      | The Term Identifier                                                                                                                                             |
+| `term`     | The standardized Term                                                                                                                                           |
+| `term_raw` | The raw Term                                                                                                                                                    |
+| `cat1`     | **Category 1:** which includes **"FinA"** for Financial Accounting Concepts, **"ManA"** for Managerial Accounting Concepts and **"BusA"** for Business Concepts |
+| **`cat2`** | **Category 2:** Indicator column if the concept is a **GAAP** concept                                                                                           |
+| `cat3`     | **Category 3:** which includes **"IS"** for Income Statement Concepts, **"BS"** for Balance Sheet Concepts and **"CF"** for Cash Flow Statement Concepts        |
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 ter %>%
@@ -116,3 +107,55 @@ ter %>%
   kableExtra::kable_styling(font_size = 10, full_width = TRUE)
 
 ```
+
+# Additional Input Lists
+
+In order to clean out term and concept list we use several additional input list, the complete pipeline can be seen in the Onlina Appendix to the paper (section 1)
+
+## British English vs. American English
+
+[http://www.tysto.com/uk-us-spelling-list.html](http://www.tysto.com/uk-us-spelling-list.html)
+
+The full list can be downloaded <a href="2_output/us_uk.xlsx" download="2_output/us_uk.xlsx">here</a>.
+
+```{r echo=FALSE}
+openxlsx::read.xlsx("2_output/us_uk.xlsx") %>%
+  dplyr::select(-origin) %>%
+  dplyr::slice(1:10) %>%
+  dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::if_else(is.na(.), "", .))) %>%
+  knitr::kable() %>%
+  kableExtra::kable_paper() %>%
+  kableExtra::kable_styling(font_size = 10, full_width = TRUE)
+```
+
+## Stylistic Differences due to hyphenations
+
+The full list can be downloaded <a href="2_output/split_terms.xlsx" download="2_output/split_terms.xlsx">here</a>.
+
+
+```{r echo=FALSE}
+openxlsx::read.xlsx("2_output/split_terms.xlsx") %>%
+  dplyr::select(-origin) %>%
+  dplyr::filter(startsWith(unsplit, "non")) %>%
+  dplyr::slice(1:10) %>%
+  dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::if_else(is.na(.), "", .))) %>%
+  knitr::kable() %>%
+  kableExtra::kable_paper() %>%
+  kableExtra::kable_styling(font_size = 10, full_width = TRUE)
+```
+
+## Stop words
+
+The full list can be downloaded <a href="2_output/stopwords.xlsx" download="2_output/stopwords.xlsx">here</a>.
+
+```{r echo=FALSE}
+openxlsx::read.xlsx("2_output/stopwords.xlsx") %>%
+  dplyr::slice(1:10) %>%
+  dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::if_else(is.na(.), "", .))) %>%
+  knitr::kable() %>%
+  kableExtra::kable_paper() %>%
+  kableExtra::kable_styling(font_size = 10, full_width = TRUE)
+```
+
+## General Language Terms
+http://wordlist.aspell.net/12dicts-readme-r4/.

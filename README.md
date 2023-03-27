@@ -3,7 +3,27 @@
 
 # About the Paper
 
-First Test Entry.
+The following Readme provides additional information and files for the
+Paper: “The Standardization of Accounting Language”.
+
+<span class="smallcaps">bstract.</span> The communication of accounting
+information requires a special vocabulary (i.e., terminology) and in
+specialized languages, standardization is considered key to effective
+and unambiguous communication. We provide the first large sample-based
+evidence on the level, determinants, and implications of accounting
+terminology standardization by examining a global sample of more than
+330,000 annual reports from 1995 to 2019. Three main takeaways emerge
+from our analyses. First, cognitive and dialectal causes (e.g.,
+accounting systems and English proficiency) are the most important
+drivers of terminology standardization. Second, the adoption of a new
+reference framework of accounting terms or tags (i.e., the introduction
+of IFRS worldwide and XBRL in the United States) increases
+standardization but also conceals important linguistics-related
+heterogeneities. Third, terminology standardization is negatively
+associated with both the incompleteness within and differences across
+accounting databases, consistent with the idea of standardized language
+being instrumental for users in extracting accounting information and
+reducing information processing costs.
 
 # Concept List
 
@@ -15,31 +35,18 @@ The full concept list can be downloaded
 
 The concept list includes the following columns:
 
-- `cid`: The Concept Identifier
-
-- `tid`: The Term Identifier
-
-- `term`: The standardized Term
-
-- `cat1`: Category 1 which includes “FinA” for Financial Accounting
-  Concepts, “ManA” for Managerial Accounting Concepts and “BusA” for
-  Business Concepts
-
-- `cat2`: Category 2 Indicator column if the concept is a GAAP concept
-
-- `cat3`: Category 3 which includes “IS” for Income Statement Concepts,
-  “BS” for Balance Sheet Concepts and “CF” for Cash Flow Statement
-  Concepts
-
-- `avg_ngram`: The average ngram of all the terms within the concept
-
-- `avg_sim`: Average textual similarity of the terms within the concept
-
-- `size`: The size of the concept (i.e. how many terms are grouped
-  within a concept)
-
-- `complex_score`: Linear combination of size, avg_ngram and avg_sim
-  (Scaled between 0-1)
+| Column          | Description                                                                                                                                                     |
+|:----------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `cid`           | The Concept Identifier                                                                                                                                          |
+| `tid`           | The Term Identifier                                                                                                                                             |
+| `term`          | The standardized Term                                                                                                                                           |
+| `cat1`          | **Category 1:** which includes **“FinA”** for Financial Accounting Concepts, **“ManA”** for Managerial Accounting Concepts and **“BusA”** for Business Concepts |
+| **`cat2`**      | **Category 2:** Indicator column if the concept is a **GAAP** concept                                                                                           |
+| `cat3`          | **Category 3:** which includes **“IS”** for Income Statement Concepts, **“BS”** for Balance Sheet Concepts and **“CF”** for Cash Flow Statement Concepts        |
+| `avg_ngram`     | The average N-Gram of all the terms within the concept (i.e. of how many words a term is composed)                                                              |
+| `avg_sim`       | Average textual similarity of the terms within the concept                                                                                                      |
+| `size`          | The size of the concept (i.e. how many terms are grouped within a concept)                                                                                      |
+| `complex_score` | Linear combination of size, avg_ngram and avg_sim (Scaled between 0-1)                                                                                          |
 
 ## Concept 1: ABC Costing
 
@@ -256,6 +263,9 @@ cat2
 cat3
 </th>
 <th style="text-align:right;">
+size
+</th>
+<th style="text-align:right;">
 avg_ngram
 </th>
 <th style="text-align:right;">
@@ -287,6 +297,9 @@ GAAP
 CF
 </td>
 <td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
 2.25
 </td>
 <td style="text-align:right;">
@@ -314,6 +327,9 @@ GAAP
 </td>
 <td style="text-align:left;">
 CF
+</td>
+<td style="text-align:right;">
+4
 </td>
 <td style="text-align:right;">
 2.25
@@ -345,6 +361,9 @@ GAAP
 CF
 </td>
 <td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
 2.25
 </td>
 <td style="text-align:right;">
@@ -374,6 +393,9 @@ GAAP
 CF
 </td>
 <td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
 2.25
 </td>
 <td style="text-align:right;">
@@ -396,23 +418,15 @@ The full concept list can be downloaded
 
 The concept list includes the following columns:
 
-- `cid`: The Concept Identifier
-
-- `tid`: The Term Identifier
-
-- `term`: The standardized Term
-
-- `term_raw`: The raw Term
-
-- `cat1`: Category 1 which includes “FinA” for Financial Accounting
-  Concepts, “ManA” for Managerial Accounting Concepts and “BusA” for
-  Business Concepts
-
-- `cat2`: Category 2 Indicator column if the concept is a GAAP concept
-
-- `cat3`: Category 3 which includes “IS” for Income Statement Concepts,
-  “BS” for Balance Sheet Concepts and “CF” for Cash Flow Statement
-  Concepts
+| Column     | Description                                                                                                                                                     |
+|:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `cid`      | The Concept Identifier                                                                                                                                          |
+| `tid`      | The Term Identifier                                                                                                                                             |
+| `term`     | The standardized Term                                                                                                                                           |
+| `term_raw` | The raw Term                                                                                                                                                    |
+| `cat1`     | **Category 1:** which includes **“FinA”** for Financial Accounting Concepts, **“ManA”** for Managerial Accounting Concepts and **“BusA”** for Business Concepts |
+| **`cat2`** | **Category 2:** Indicator column if the concept is a **GAAP** concept                                                                                           |
+| `cat3`     | **Category 3:** which includes **“IS”** for Income Statement Concepts, **“BS”** for Balance Sheet Concepts and **“CF”** for Cash Flow Statement Concepts        |
 
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -624,3 +638,348 @@ BusA
 </tr>
 </tbody>
 </table>
+
+# Additional Input Lists
+
+In order to clean out term and concept list we use several additional
+input list, the complete pipeline can be seen in the Onlina Appendix to
+the paper (section 1)
+
+## British English vs. American English
+
+<http://www.tysto.com/uk-us-spelling-list.html>
+
+The full list can be downloaded
+<a href="2_output/us_uk.xlsx" download="2_output/us_uk.xlsx">here</a>.
+
+<table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+uk
+</th>
+<th style="text-align:left;">
+us
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+accessorise
+</td>
+<td style="text-align:left;">
+accessorize
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+accessorised
+</td>
+<td style="text-align:left;">
+accessorized
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+accessorises
+</td>
+<td style="text-align:left;">
+accessorizes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+accessorising
+</td>
+<td style="text-align:left;">
+accessorizing
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+acclimatisation
+</td>
+<td style="text-align:left;">
+acclimatization
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+acclimatise
+</td>
+<td style="text-align:left;">
+acclimatize
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+acclimatised
+</td>
+<td style="text-align:left;">
+acclimatized
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+acclimatises
+</td>
+<td style="text-align:left;">
+acclimatizes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+acclimatising
+</td>
+<td style="text-align:left;">
+acclimatizing
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+accoutrements
+</td>
+<td style="text-align:left;">
+accouterments
+</td>
+</tr>
+</tbody>
+</table>
+
+## Stylistic Differences due to hyphenations
+
+The full list can be downloaded
+<a href="2_output/split_terms.xlsx" download="2_output/split_terms.xlsx">here</a>.
+
+<table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+unsplit
+</th>
+<th style="text-align:left;">
+split
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+nonaccretable
+</td>
+<td style="text-align:left;">
+non accretable
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nonaccrual
+</td>
+<td style="text-align:left;">
+non accrual
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nonallowable
+</td>
+<td style="text-align:left;">
+non allowable
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nonamortisable
+</td>
+<td style="text-align:left;">
+non amortisable
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nonamortizable
+</td>
+<td style="text-align:left;">
+non amortizable
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+noncallable
+</td>
+<td style="text-align:left;">
+non callable
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+noncancelable
+</td>
+<td style="text-align:left;">
+non cancelable
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+noncash
+</td>
+<td style="text-align:left;">
+non cash
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+noncatastrophic
+</td>
+<td style="text-align:left;">
+non catastrophic
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+noncompete
+</td>
+<td style="text-align:left;">
+non compete
+</td>
+</tr>
+</tbody>
+</table>
+
+## Stop words
+
+The full list can be downloaded
+<a href="2_output/stopwords.xlsx" download="2_output/stopwords.xlsx">here</a>.
+
+<table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+stop
+</th>
+<th style="text-align:left;">
+stop_type
+</th>
+<th style="text-align:left;">
+origin
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+pwc
+</td>
+<td style="text-align:left;">
+auditor
+</td>
+<td style="text-align:left;">
+own
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+kpmg
+</td>
+<td style="text-align:left;">
+auditor
+</td>
+<td style="text-align:left;">
+own
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pricewaterhousecoopers
+</td>
+<td style="text-align:left;">
+auditor
+</td>
+<td style="text-align:left;">
+own
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+deloitte
+</td>
+<td style="text-align:left;">
+auditor
+</td>
+<td style="text-align:left;">
+own
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+deloitte touche
+</td>
+<td style="text-align:left;">
+auditor
+</td>
+<td style="text-align:left;">
+own
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ey
+</td>
+<td style="text-align:left;">
+auditor
+</td>
+<td style="text-align:left;">
+own
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ernst and young
+</td>
+<td style="text-align:left;">
+auditor
+</td>
+<td style="text-align:left;">
+own
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+adopeng
+</td>
+<td style="text-align:left;">
+currency
+</td>
+<td style="text-align:left;">
+own
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+afghani
+</td>
+<td style="text-align:left;">
+currency
+</td>
+<td style="text-align:left;">
+L&M
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ariary
+</td>
+<td style="text-align:left;">
+currency
+</td>
+<td style="text-align:left;">
+L&M
+</td>
+</tr>
+</tbody>
+</table>
+
+## General Language Terms
+
+<http://wordlist.aspell.net/12dicts-readme-r4/>.
