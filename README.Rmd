@@ -44,7 +44,7 @@ The full concept list can be downloaded <a href="2_output/concept_list.xlsx" dow
 The concept list includes the following columns:
 
 | Column          | Description                                                                                                                                                     |
-|:--------------|:--------------------------------------------------------|
+|:----------------|:------------------------------------------------------|
 | `cid`           | The Concept Identifier                                                                                                                                          |
 | `tid`           | The Term Identifier                                                                                                                                             |
 | `term`          | The standardized Term                                                                                                                                           |
@@ -89,7 +89,7 @@ The full concept list can be downloaded <a href="2_output/term_list.xlsx" downlo
 The concept list includes the following columns:
 
 | Column     | Description                                                                                                                                                     |
-|:--------------|:--------------------------------------------------------|
+|:----------------|:------------------------------------------------------|
 | `cid`      | The Concept Identifier                                                                                                                                          |
 | `tid`      | The Term Identifier                                                                                                                                             |
 | `term`     | The standardized Term                                                                                                                                           |
@@ -114,7 +114,7 @@ In order to clean out term and concept list we use several additional input list
 
 ## British English vs. American English
 
-[http://www.tysto.com/uk-us-spelling-list.html](http://www.tysto.com/uk-us-spelling-list.html)
+<http://www.tysto.com/uk-us-spelling-list.html>
 
 The full list can be downloaded <a href="2_output/us_uk.xlsx" download="2_output/us_uk.xlsx">here</a>.
 
@@ -131,7 +131,6 @@ openxlsx::read.xlsx("2_output/us_uk.xlsx") %>%
 ## Stylistic Differences due to hyphenations
 
 The full list can be downloaded <a href="2_output/split_terms.xlsx" download="2_output/split_terms.xlsx">here</a>.
-
 
 ```{r echo=FALSE}
 openxlsx::read.xlsx("2_output/split_terms.xlsx") %>%
@@ -158,4 +157,21 @@ openxlsx::read.xlsx("2_output/stopwords.xlsx") %>%
 ```
 
 ## General Language Terms
-http://wordlist.aspell.net/12dicts-readme-r4/.
+
+<http://wordlist.aspell.net/12dicts-readme-r4/>.
+
+# Additional Packages
+
+There are two packages that come with the paper and are free to use.
+
+## Package 1: Search for Multiword Expressions in a Corpus
+
+This is the package we use for retrieving the position of our terms in our annual report corpus.
+
+The package can be wound here: <https://github.com/MatthiasUckert/rTermCount>
+
+## Package 2: Multidimensional Name Matching
+
+This is the package we use for matching our annual report dataset to Worldscope
+
+The package can be wound here: <https://github.com/MatthiasUckert/rMatching>
