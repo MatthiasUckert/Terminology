@@ -14,9 +14,13 @@ knitr::opts_chunk$set(
 
 # About the Paper
 
-The following Readme provides additional information and files for the Paper: "The Standardization of Accounting Language".
+The following Readme provides additional information and files for the Paper:
 
+***"The Standardization of Accounting Language".***
+
+::: {style="text-align: justify"}
 [Abstract.]{.smallcaps} The communication of accounting information requires a special vocabulary (i.e., terminology) and in specialized languages, standardization is considered key to effective and unambiguous communication. We provide the first large sample-based evidence on the level, determinants, and implications of accounting terminology standardization by examining a global sample of more than 330,000 annual reports from 1995 to 2019. Three main takeaways emerge from our analyses. First, cognitive and dialectal causes (e.g., accounting systems and English proficiency) are the most important drivers of terminology standardization. Second, the adoption of a new reference framework of accounting terms or tags (i.e., the introduction of IFRS worldwide and XBRL in the United States) increases standardization but also conceals important linguistics-related heterogeneities. Third, terminology standardization is negatively associated with both the incompleteness within and differences across accounting databases, consistent with the idea of standardized language being instrumental for users in extracting accounting information and reducing information processing costs.
+:::
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 library(DT)
@@ -37,14 +41,14 @@ openxlsx::write.xlsx(ter, "2_output/term_list.xlsx", TRUE, TRUE)
 
 # Concept List
 
-The tables below show two example concepts for the paper: "The Standardization of Accounting Language".
+The tables below show two example concepts for the paper: ***"The Standardization of Accounting Language".***
 
 The full concept list can be downloaded <a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>.
 
 The concept list includes the following columns:
 
 | Column          | Description                                                                                                                                                     |
-|:----------------|:------------------------------------------------------|
+|:------------------|:----------------------------------------------------|
 | `cid`           | The Concept Identifier                                                                                                                                          |
 | `tid`           | The Term Identifier                                                                                                                                             |
 | `term`          | The standardized Term                                                                                                                                           |
@@ -82,14 +86,14 @@ con %>%
 
 # Term List
 
-The table below shows the first ten terms for the paper: "The Standardization of Accounting Language".
+The table below shows the first ten terms for the paper: ***"The Standardization of Accounting Language".***
 
 The full concept list can be downloaded <a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
 
 The concept list includes the following columns:
 
 | Column     | Description                                                                                                                                                     |
-|:----------------|:------------------------------------------------------|
+|:------------------|:----------------------------------------------------|
 | `cid`      | The Concept Identifier                                                                                                                                          |
 | `tid`      | The Term Identifier                                                                                                                                             |
 | `term`     | The standardized Term                                                                                                                                           |
@@ -110,11 +114,15 @@ ter %>%
 
 # Additional Input Lists
 
+::: {style="text-align: justify"}
 In order to clean out term and concept list we use several additional input list, the complete pipeline can be seen in the Online Appendix to the paper (section 1).
+:::
 
 ## British English vs. American English
 
-We normalize different varieties of English (i.e., \"capitalization\" and \"capitalisation\") by converting all British-English spelling varieties of a word to American-English, we do so by relying on an American/British English Dictionary that contains more than 1,700 different word combinations.
+::: {style="text-align: justify"}
+We normalize different varieties of English (i.e., "capitalization" and "capitalisation") by converting all British-English spelling varieties of a word to American-English, we do so by relying on an American/British English Dictionary that contains more than 1,700 different word combinations.
+:::
 
 <http://www.tysto.com/uk-us-spelling-list.html>
 
@@ -132,7 +140,9 @@ openxlsx::read.xlsx("2_output/us_uk.xlsx") %>%
 
 ## Stylistic Differences due to hyphenations
 
-We account for stylistic differences arising from different hyphenations and the inclusion/exclusion of blank characters (i.e., \"non-current assets\", \"non current assets\" and \"noncurrent assets\"). For this purpose, we build a custom dictionary with more than 300 different split term pairs, and we always convert a word within a term to a split, hyphen-free version (i.e. the word \"noncurrent\" is converted to \"non current\").
+::: {style="text-align: justify"}
+We account for stylistic differences arising from different hyphenations and the inclusion/exclusion of blank characters (i.e., "non-current assets", "non current assets" and "noncurrent assets"). For this purpose, we build a custom dictionary with more than 300 different split term pairs, and we always convert a word within a term to a split, hyphen-free version (i.e. the word "noncurrent" is converted to "non current").
+:::
 
 The full list can be downloaded <a href="2_output/split_terms.xlsx" download="2_output/split_terms.xlsx">here</a>.
 
@@ -149,7 +159,9 @@ openxlsx::read.xlsx("2_output/split_terms.xlsx") %>%
 
 ## Stop words
 
-We remove terms that equal a stop word (e.g., \"and\", \"or\", ...) by complementing Loughran and McDonald\'s stop word lists with more than 550 custom stop words and phrases (proper names, currencies, stock exchanges, non English terms and geographic regions) we identified from our raw sources.
+::: {style="text-align: justify"}
+We remove terms that equal a stop word (e.g., "and", "or", ...) by complementing Loughran and McDonald's stop word lists with more than 550 custom stop words and phrases (proper names, currencies, stock exchanges, non English terms and geographic regions) we identified from our raw sources.
+:::
 
 The full list can be downloaded <a href="2_output/stopwords.xlsx" download="2_output/stopwords.xlsx">here</a>.
 
@@ -164,8 +176,10 @@ openxlsx::read.xlsx("2_output/stopwords.xlsx") %>%
 
 ## General Language Terms
 
-We exclude accounting terms which also have a (different) meaning in *general* language (e.g., \"entry\") and which we identify with the *2of12inf*
-dictionary which is a word list that includes more than 80,000 words (See Loughran and McDonald, 2011, 2016).
+::: {style="text-align: justify"}
+We exclude accounting terms which also have a (different) meaning in *general* language (e.g., "entry") and which we identify with the *2of12inf* dictionary which is a word list that includes more than 80,000 words (See Loughran and McDonald, 2011, 2016).
+:::
+
 <http://wordlist.aspell.net/12dicts-readme-r4/>.
 
 # Additional Packages

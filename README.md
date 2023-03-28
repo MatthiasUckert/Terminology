@@ -4,7 +4,11 @@
 # About the Paper
 
 The following Readme provides additional information and files for the
-Paper: “The Standardization of Accounting Language”.
+Paper:
+
+***“The Standardization of Accounting Language”.***
+
+<div style="text-align: justify">
 
 <span class="smallcaps">Abstract.</span> The communication of accounting
 information requires a special vocabulary (i.e., terminology) and in
@@ -25,10 +29,12 @@ accounting databases, consistent with the idea of standardized language
 being instrumental for users in extracting accounting information and
 reducing information processing costs.
 
+</div>
+
 # Concept List
 
-The tables below show two example concepts for the paper: “The
-Standardization of Accounting Language”.
+The tables below show two example concepts for the paper: ***“The
+Standardization of Accounting Language”.***
 
 The full concept list can be downloaded
 <a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>.
@@ -410,8 +416,8 @@ CF
 
 # Term List
 
-The table below shows the first ten terms for the paper: “The
-Standardization of Accounting Language”.
+The table below shows the first ten terms for the paper: ***“The
+Standardization of Accounting Language”.***
 
 The full concept list can be downloaded
 <a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
@@ -641,17 +647,25 @@ BusA
 
 # Additional Input Lists
 
+<div style="text-align: justify">
+
 In order to clean out term and concept list we use several additional
 input list, the complete pipeline can be seen in the Online Appendix to
 the paper (section 1).
 
+</div>
+
 ## British English vs. American English
 
-We normalize different varieties of English (i.e., "capitalization" and
-"capitalisation") by converting all British-English spelling varieties
+<div style="text-align: justify">
+
+We normalize different varieties of English (i.e., “capitalization” and
+“capitalisation”) by converting all British-English spelling varieties
 of a word to American-English, we do so by relying on an
 American/British English Dictionary that contains more than 1,700
 different word combinations.
+
+</div>
 
 <http://www.tysto.com/uk-us-spelling-list.html>
 
@@ -755,13 +769,17 @@ accouterments
 
 ## Stylistic Differences due to hyphenations
 
+<div style="text-align: justify">
+
 We account for stylistic differences arising from different hyphenations
-and the inclusion/exclusion of blank characters (i.e., "non-current
-assets", "non current assets" and "noncurrent assets"). For this
+and the inclusion/exclusion of blank characters (i.e., “non-current
+assets”, “non current assets” and “noncurrent assets”). For this
 purpose, we build a custom dictionary with more than 300 different split
 term pairs, and we always convert a word within a term to a split,
-hyphen-free version (i.e. the word "noncurrent" is converted to "non
-current").
+hyphen-free version (i.e. the word “noncurrent” is converted to “non
+current”).
+
+</div>
 
 The full list can be downloaded
 <a href="2_output/split_terms.xlsx" download="2_output/split_terms.xlsx">here</a>.
@@ -863,11 +881,15 @@ non compete
 
 ## Stop words
 
-We remove terms that equal a stop word (e.g., "and", "or", …) by
-complementing Loughran and McDonald's stop word lists with more than 550
+<div style="text-align: justify">
+
+We remove terms that equal a stop word (e.g., “and”, “or”, …) by
+complementing Loughran and McDonald’s stop word lists with more than 550
 custom stop words and phrases (proper names, currencies, stock
 exchanges, non English terms and geographic regions) we identified from
 our raw sources.
+
+</div>
 
 The full list can be downloaded
 <a href="2_output/stopwords.xlsx" download="2_output/stopwords.xlsx">here</a>.
@@ -1002,10 +1024,15 @@ L&M
 
 ## General Language Terms
 
+<div style="text-align: justify">
+
 We exclude accounting terms which also have a (different) meaning in
-*general* language (e.g., "entry") and which we identify with the
+*general* language (e.g., “entry”) and which we identify with the
 *2of12inf* dictionary which is a word list that includes more than
 80,000 words (See Loughran and McDonald, 2011, 2016).
+
+</div>
+
 <http://wordlist.aspell.net/12dicts-readme-r4/>.
 
 # Additional Packages
