@@ -6,7 +6,7 @@
 The following Readme provides additional information and files for the
 Paper: “The Standardization of Accounting Language”.
 
-<span class="smallcaps">bstract.</span> The communication of accounting
+<span class="smallcaps">Abstract.</span> The communication of accounting
 information requires a special vocabulary (i.e., terminology) and in
 specialized languages, standardization is considered key to effective
 and unambiguous communication. We provide the first large sample-based
@@ -642,10 +642,16 @@ BusA
 # Additional Input Lists
 
 In order to clean out term and concept list we use several additional
-input list, the complete pipeline can be seen in the Onlina Appendix to
-the paper (section 1)
+input list, the complete pipeline can be seen in the Online Appendix to
+the paper (section 1).
 
 ## British English vs. American English
+
+We normalize different varieties of English (i.e., "capitalization" and
+"capitalisation") by converting all British-English spelling varieties
+of a word to American-English, we do so by relying on an
+American/British English Dictionary that contains more than 1,700
+different word combinations.
 
 <http://www.tysto.com/uk-us-spelling-list.html>
 
@@ -749,6 +755,14 @@ accouterments
 
 ## Stylistic Differences due to hyphenations
 
+We account for stylistic differences arising from different hyphenations
+and the inclusion/exclusion of blank characters (i.e., "non-current
+assets", "non current assets" and "noncurrent assets"). For this
+purpose, we build a custom dictionary with more than 300 different split
+term pairs, and we always convert a word within a term to a split,
+hyphen-free version (i.e. the word "noncurrent" is converted to "non
+current").
+
 The full list can be downloaded
 <a href="2_output/split_terms.xlsx" download="2_output/split_terms.xlsx">here</a>.
 
@@ -848,6 +862,12 @@ non compete
 </table>
 
 ## Stop words
+
+We remove terms that equal a stop word (e.g., "and", "or", …) by
+complementing Loughran and McDonald's stop word lists with more than 550
+custom stop words and phrases (proper names, currencies, stock
+exchanges, non English terms and geographic regions) we identified from
+our raw sources.
 
 The full list can be downloaded
 <a href="2_output/stopwords.xlsx" download="2_output/stopwords.xlsx">here</a>.
@@ -982,6 +1002,10 @@ L&M
 
 ## General Language Terms
 
+We exclude accounting terms which also have a (different) meaning in
+*general* language (e.g., "entry") and which we identify with the
+*2of12inf* dictionary which is a word list that includes more than
+80,000 words (See Loughran and McDonald, 2011, 2016).
 <http://wordlist.aspell.net/12dicts-readme-r4/>.
 
 # Additional Packages
@@ -998,7 +1022,7 @@ The package can be wound here:
 
 ## Package 2: Multidimensional Name Matching
 
-This is the package we use for matching our annual report dataset to
+This is the package we use for matching our annual report data set to
 Worldscope
 
 The package can be wound here:
