@@ -8,29 +8,6 @@ Paper:
 
 ***“The Standardization of Accounting Language”.***
 
-<div style="text-align: justify">
-
-<span class="smallcaps">Abstract.</span> The communication of accounting
-information requires a special vocabulary (i.e., terminology) and in
-specialized languages, standardization is considered key to effective
-and unambiguous communication. We provide the first large sample-based
-evidence on the level, determinants, and implications of accounting
-terminology standardization by examining a global sample of more than
-330,000 annual reports from 1995 to 2019. Three main takeaways emerge
-from our analyses. First, cognitive and dialectal causes (e.g.,
-accounting systems and English proficiency) are the most important
-drivers of terminology standardization. Second, the adoption of a new
-reference framework of accounting terms or tags (i.e., the introduction
-of IFRS worldwide and XBRL in the United States) increases
-standardization but also conceals important linguistics-related
-heterogeneities. Third, terminology standardization is negatively
-associated with both the incompleteness within and differences across
-accounting databases, consistent with the idea of standardized language
-being instrumental for users in extracting accounting information and
-reducing information processing costs.
-
-</div>
-
 # Concept List
 
 The tables below show two example concepts for the paper: ***“The
