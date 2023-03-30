@@ -1011,23 +1011,3 @@ We exclude accounting terms which also have a (different) meaning in
 </div>
 
 <http://wordlist.aspell.net/12dicts-readme-r4/>.
-
-# Additional Packages
-
-There are two packages that come with the paper and are free to use.
-
-## Package 1: Search for Multiword Expressions in a Corpus
-
-This is the package we use for retrieving the position of our terms in
-our annual report corpus.
-
-The package can be wound here:
-<https://github.com/MatthiasUckert/rTermCount>
-
-## Package 2: Multidimensional Name Matching
-
-This is the package we use for matching our annual report data set to
-Worldscope
-
-The package can be wound here:
-<https://github.com/MatthiasUckert/rMatching>
