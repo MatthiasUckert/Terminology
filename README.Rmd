@@ -49,18 +49,43 @@ The full concept list can be downloaded <a href="2_output/concept_list.xlsx" dow
 
 The concept list includes the following columns:
 
-| Column          | Description                                                                                                                                                     |
-|:------------|:----------------------------------------------------------|
-| `cid`           | The Concept Identifier                                                                                                                                          |
-| `tid`           | The Term Identifier                                                                                                                                             |
-| `term`          | The standardized Term                                                                                                                                           |
-| `cat1`          | **Category 1:** which includes **"FinA"** for Financial Accounting Concepts, **"ManA"** for Managerial Accounting Concepts and **"BusA"** for Business Concepts |
-| **`cat2`**      | **Category 2:** Indicator column if the concept is a **GAAP** concept                                                                                           |
-| `cat3`          | **Category 3:** which includes **"IS"** for Income Statement Concepts, **"BS"** for Balance Sheet Concepts and **"CF"** for Cash Flow Statement Concepts        |
-| `avg_ngram`     | The average N-Gram of all the terms within the concept (i.e. of how many words a term is composed)                                                              |
-| `avg_sim`       | Average textual similarity of the terms within the concept                                                                                                      |
-| `size`          | The size of the concept (i.e. how many terms are grouped within a concept)                                                                                      |
-| `complex_score` | Linear combination of size, avg_ngram and avg_sim (Scaled between 0-1)                                                                                          |
++-----------------+----------------------------------------------------------------------------------------------------+
+| Column          | Description                                                                                        |
++:================+:===================================================================================================+
+| `cid`           | The Concept Identifier                                                                             |
++-----------------+----------------------------------------------------------------------------------------------------+
+| `tid`           | The Term Identifier                                                                                |
++-----------------+----------------------------------------------------------------------------------------------------+
+| `term`          | The standardized Term                                                                              |
++-----------------+----------------------------------------------------------------------------------------------------+
+| `cat1`          | **Category 1:** Indicator column to what class a concept belongs                                   |
+|                 |                                                                                                    |
+|                 | -   **FinA**: Financial Accounting Concept                                                         |
+|                 |                                                                                                    |
+|                 | -   **ManA**: Managerial Accounting Concepts                                                       |
+|                 |                                                                                                    |
+|                 | -   **BusA**: Business Concepts                                                                    |
++-----------------+----------------------------------------------------------------------------------------------------+
+| **`cat2`**      | **Category 2:** Indicator column to what class a concept belongs                                   |
+|                 |                                                                                                    |
+|                 | -   **GAAP:** Either an IFRS or US GAAP Concept                                                    |
++-----------------+----------------------------------------------------------------------------------------------------+
+| `cat3`          | **Category 3:** Indicator column to what class a concept belongs                                   |
+|                 |                                                                                                    |
+|                 | -   **IS**: Income Statement Concepts                                                              |
+|                 |                                                                                                    |
+|                 | -   **BS:** Balance Sheet Concepts                                                                 |
+|                 |                                                                                                    |
+|                 | -   **CF:** Cash Flow Statement Concepts                                                           |
++-----------------+----------------------------------------------------------------------------------------------------+
+| `avg_ngram`     | The average N-Gram of all the terms within the concept (i.e. of how many words a term is composed) |
++-----------------+----------------------------------------------------------------------------------------------------+
+| `avg_sim`       | Average textual similarity of the terms within the concept                                         |
++-----------------+----------------------------------------------------------------------------------------------------+
+| `size`          | The size of the concept (i.e. how many terms are grouped within a concept)                         |
++-----------------+----------------------------------------------------------------------------------------------------+
+| `complex_score` | Linear combination of size, avg_ngram and avg_sim (Scaled between 0-1)                             |
++-----------------+----------------------------------------------------------------------------------------------------+
 
 The tables below show two example concepts for our concept list.
 
@@ -94,17 +119,26 @@ The full term list can be downloaded <a href="2_output/term_list.xlsx" download=
 
 The concept list includes the following columns:
 
-| Column     | Description                                                                                                                                                     |
-|:-----------|:----------------------------------------------------------|
-| `cid`      | The Concept Identifier                                                                                                                                          |
-| `tid`      | The Term Identifier                                                                                                                                             |
-| `term`     | The standardized Term                                                                                                                                           |
-| `term_raw` | The raw Term                                                                                                                                                    |
-| `cat1`     | **Category 1:** which includes **"FinA"** for Financial Accounting Concepts, **"ManA"** for Managerial Accounting Concepts and **"BusA"** for Business Concepts |
-| **`cat2`** | **Category 2:** Indicator column if the concept is a **GAAP** concept                                                                                           |
-| `cat3`     | **Category 3:** which includes **"IS"** for Income Statement Concepts, **"BS"** for Balance Sheet Concepts and **"CF"** for Cash Flow Statement Concepts        |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Column       | Description                                                                                                                                                     |
++:=============+:================================================================================================================================================================+
+| `cid`        | The Concept Identifier                                                                                                                                          |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `tid`        | The Term Identifier                                                                                                                                             |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `term`       | The standardized Term                                                                                                                                           |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `term_raw`   | The raw Term                                                                                                                                                    |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `cat1`       | **Category 1:** which includes **"FinA"** for Financial Accounting Concepts, **"ManA"** for Managerial Accounting Concepts and **"BusA"** for Business Concepts |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **`cat2`**   | **Category 2:** Indicator column if the concept is a **GAAP** concept                                                                                           |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `cat3`       | **Category 3:** which includes **"IS"** for Income Statement Concepts, **"BS"** for Balance Sheet Concepts and **"CF"** for Cash Flow Statement Concepts        |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The table below shows the first ten terms of our term list:
+
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 ter %>%
   dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::if_else(is.na(.), "", .))) %>%
@@ -192,8 +226,9 @@ We exclude accounting terms which also have a (different) meaning in *general* l
 <http://wordlist.aspell.net/12dicts-readme-r4/>.
 
 ## Lemmatization List
+
 ::: {style="text-align: justify"}
-We lemmatize our terms to account for different inflectional endings and plurals (e.g., “assets” and “asset”) and remove all punctuation
+We lemmatize our terms to account for different inflectional endings and plurals (e.g., "assets" and "asset") and remove all punctuation
 :::
 
 The full list can be downloaded <a href="2_output/lemma_list.xlsx" download="2_output/lemma_list.xlsx">here</a>.

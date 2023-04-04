@@ -15,18 +15,80 @@ The full concept list can be downloaded
 
 The concept list includes the following columns:
 
-| Column          | Description                                                                                                                                                     |
-|:----------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cid`           | The Concept Identifier                                                                                                                                          |
-| `tid`           | The Term Identifier                                                                                                                                             |
-| `term`          | The standardized Term                                                                                                                                           |
-| `cat1`          | **Category 1:** which includes **“FinA”** for Financial Accounting Concepts, **“ManA”** for Managerial Accounting Concepts and **“BusA”** for Business Concepts |
-| **`cat2`**      | **Category 2:** Indicator column if the concept is a **GAAP** concept                                                                                           |
-| `cat3`          | **Category 3:** which includes **“IS”** for Income Statement Concepts, **“BS”** for Balance Sheet Concepts and **“CF”** for Cash Flow Statement Concepts        |
-| `avg_ngram`     | The average N-Gram of all the terms within the concept (i.e. of how many words a term is composed)                                                              |
-| `avg_sim`       | Average textual similarity of the terms within the concept                                                                                                      |
-| `size`          | The size of the concept (i.e. how many terms are grouped within a concept)                                                                                      |
-| `complex_score` | Linear combination of size, avg_ngram and avg_sim (Scaled between 0-1)                                                                                          |
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 84%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Column</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>cid</code></td>
+<td style="text-align: left;">The Concept Identifier</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tid</code></td>
+<td style="text-align: left;">The Term Identifier</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>term</code></td>
+<td style="text-align: left;">The standardized Term</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>cat1</code></td>
+<td style="text-align: left;"><p><strong>Category 1:</strong> Indicator
+column to what class a concept belongs</p>
+<ul>
+<li><p><strong>FinA</strong>: Financial Accounting Concept</p></li>
+<li><p><strong>ManA</strong>: Managerial Accounting Concepts</p></li>
+<li><p><strong>BusA</strong>: Business Concepts</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><code>cat2</code></strong></td>
+<td style="text-align: left;"><p><strong>Category 2:</strong> Indicator
+column to what class a concept belongs</p>
+<ul>
+<li><strong>GAAP:</strong> Either an IFRS or US GAAP Concept</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>cat3</code></td>
+<td style="text-align: left;"><p><strong>Category 3:</strong> Indicator
+column to what class a concept belongs</p>
+<ul>
+<li><p><strong>IS</strong>: Income Statement Concepts</p></li>
+<li><p><strong>BS:</strong> Balance Sheet Concepts</p></li>
+<li><p><strong>CF:</strong> Cash Flow Statement Concepts</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>avg_ngram</code></td>
+<td style="text-align: left;">The average N-Gram of all the terms within
+the concept (i.e. of how many words a term is composed)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>avg_sim</code></td>
+<td style="text-align: left;">Average textual similarity of the terms
+within the concept</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>size</code></td>
+<td style="text-align: left;">The size of the concept (i.e. how many
+terms are grouped within a concept)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>complex_score</code></td>
+<td style="text-align: left;">Linear combination of size, avg_ngram and
+avg_sim (Scaled between 0-1)</td>
+</tr>
+</tbody>
+</table>
 
 The tables below show two example concepts for our concept list.
 
@@ -408,6 +470,7 @@ The concept list includes the following columns:
 | `cat3`     | **Category 3:** which includes **“IS”** for Income Statement Concepts, **“BS”** for Balance Sheet Concepts and **“CF”** for Cash Flow Statement Concepts        |
 
 The table below shows the first ten terms of our term list:
+
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
