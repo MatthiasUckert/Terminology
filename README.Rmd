@@ -18,7 +18,6 @@ The following Readme provides additional information and files for the Paper:
 
 ***"The Standardization of Accounting Language".***
 
-
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 library(DT)
 library(tidyverse)
@@ -27,13 +26,21 @@ con <- readr::read_rds("0_data/cls_tp_final.rds") %>%
   dplyr::select(cid, concept_name, tid, term, cat1, cat2, cat3, size, avg_ngram, avg_sim, complex_score) %>%
   dplyr::mutate(cat2 = dplyr::if_else(!is.na(cat2), "GAAP", NA_character_)) %>%
   dplyr::arrange(cid)
-openxlsx::write.xlsx(con, "2_output/concept_list.xlsx", TRUE, TRUE)
+
+if (!file.exists("2_output/concept_list.xlsx")) {
+  openxlsx::write.xlsx(con, "2_output/concept_list.xlsx", TRUE, TRUE)
+}
+
 
 ter <- readr::read_rds("0_data/tls_tp_final.rds") %>%
   dplyr::select(tid, term, term_raw, cat1, cat2, cat3) %>%
-    dplyr::mutate(cat2 = dplyr::if_else(!is.na(cat2), "GAAP", NA_character_)) %>%
+  dplyr::mutate(cat2 = dplyr::if_else(!is.na(cat2), "GAAP", NA_character_)) %>%
   dplyr::arrange(tid)
-openxlsx::write.xlsx(ter, "2_output/term_list.xlsx", TRUE, TRUE)
+
+if (!file.exists("2_output/term_list.xlsx")) {
+  openxlsx::write.xlsx(ter, "2_output/term_list.xlsx", TRUE, TRUE)
+}
+
 ```
 
 # Concept List
@@ -45,7 +52,7 @@ The full concept list can be downloaded <a href="2_output/concept_list.xlsx" dow
 The concept list includes the following columns:
 
 | Column          | Description                                                                                                                                                     |
-|:-------------------|:---------------------------------------------------|
+|:------------|:----------------------------------------------------------|
 | `cid`           | The Concept Identifier                                                                                                                                          |
 | `tid`           | The Term Identifier                                                                                                                                             |
 | `term`          | The standardized Term                                                                                                                                           |
@@ -90,7 +97,7 @@ The full concept list can be downloaded <a href="2_output/term_list.xlsx" downlo
 The concept list includes the following columns:
 
 | Column     | Description                                                                                                                                                     |
-|:-------------------|:---------------------------------------------------|
+|:-----------|:----------------------------------------------------------|
 | `cid`      | The Concept Identifier                                                                                                                                          |
 | `tid`      | The Term Identifier                                                                                                                                             |
 | `term`     | The standardized Term                                                                                                                                           |
@@ -112,7 +119,7 @@ ter %>%
 # Additional Input Lists
 
 ::: {style="text-align: justify"}
-In order to clean out term and concept list we use several additional input list, the complete pipeline can be seen in the Online Appendix to the paper (section 1).
+In order to clean our term and concept list we use several additional input list, the complete pipeline can be seen in the Online Appendix to the paper (section 1).
 :::
 
 ## British English vs. American English
@@ -178,3 +185,20 @@ We exclude accounting terms which also have a (different) meaning in *general* l
 :::
 
 <http://wordlist.aspell.net/12dicts-readme-r4/>.
+
+## Lemmatization List
+::: {style="text-align: justify"}
+We lemmatize our terms to account for different inflectional endings and plurals (e.g., “assets” and “asset”) and remove all punctuation
+:::
+
+The full list can be downloaded <a href="2_output/lemma_list.xlsx" download="2_output/lemma_list.xlsx">here</a>.
+
+```{r echo=FALSE}
+openxlsx::read.xlsx("2_output/lemma_list.xlsx") %>%
+  dplyr::filter(startsWith(token, "a")) %>%
+  dplyr::slice(20:30) %>%
+  dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::if_else(is.na(.), "", .))) %>%
+  knitr::kable() %>%
+  kableExtra::kable_paper() %>%
+  kableExtra::kable_styling(font_size = 10, full_width = TRUE)
+```
