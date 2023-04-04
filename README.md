@@ -459,15 +459,64 @@ The full term list can be downloaded
 
 The concept list includes the following columns:
 
-| Column     | Description                                                                                                                                                     |
-|:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cid`      | The Concept Identifier                                                                                                                                          |
-| `tid`      | The Term Identifier                                                                                                                                             |
-| `term`     | The standardized Term                                                                                                                                           |
-| `term_raw` | The raw Term                                                                                                                                                    |
-| `cat1`     | **Category 1:** which includes **“FinA”** for Financial Accounting Concepts, **“ManA”** for Managerial Accounting Concepts and **“BusA”** for Business Concepts |
-| **`cat2`** | **Category 2:** Indicator column if the concept is a **GAAP** concept                                                                                           |
-| `cat3`     | **Category 3:** which includes **“IS”** for Income Statement Concepts, **“BS”** for Balance Sheet Concepts and **“CF”** for Cash Flow Statement Concepts        |
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 81%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Column</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>cid</code></td>
+<td style="text-align: left;">The Concept Identifier</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tid</code></td>
+<td style="text-align: left;">The Term Identifier</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>term</code></td>
+<td style="text-align: left;">The standardized Term</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>term_raw</code></td>
+<td style="text-align: left;">The raw Term</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>cat1</code></td>
+<td style="text-align: left;"><p><strong>Category 1:</strong> Indicator
+column to what class a concept belongs</p>
+<ul>
+<li><p><strong>FinA</strong>: Financial Accounting Concept</p></li>
+<li><p><strong>ManA</strong>: Managerial Accounting Concepts</p></li>
+<li><p><strong>BusA</strong>: Business Concepts</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><code>cat2</code></strong></td>
+<td style="text-align: left;"><p><strong>Category 2:</strong> Indicator
+column to what class a concept belongs</p>
+<ul>
+<li><strong>GAAP:</strong> Either an IFRS or US GAAP Concept</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>cat3</code></td>
+<td style="text-align: left;"><p><strong>Category 3:</strong> Indicator
+column to what class a concept belongs</p>
+<ul>
+<li><p><strong>IS</strong>: Income Statement Concepts</p></li>
+<li><p><strong>BS:</strong> Balance Sheet Concepts</p></li>
+<li><p><strong>CF:</strong> Cash Flow Statement Concepts</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
 The table below shows the first ten terms of our term list:
 
