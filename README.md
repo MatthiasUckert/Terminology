@@ -437,54 +437,16 @@ cat3
 <tbody>
 <tr>
 <td style="text-align:right;">
-1
+100
 </td>
 <td style="text-align:left;">
-10 k
+accident year
 </td>
 <td style="text-align:left;">
-10 - k
-</td>
-<td style="text-align:left;">
-FinA
-</td>
-<td style="text-align:left;">
-GAAP
-</td>
-<td style="text-align:left;">
-CF
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:left;">
-10 ksb
-</td>
-<td style="text-align:left;">
-10 - ksb
+accident year
 </td>
 <td style="text-align:left;">
 BusA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:left;">
-10 q
-</td>
-<td style="text-align:left;">
-10 - q
-</td>
-<td style="text-align:left;">
-FinA
 </td>
 <td style="text-align:left;">
 GAAP
@@ -494,13 +456,121 @@ GAAP
 </tr>
 <tr>
 <td style="text-align:right;">
-4
+101
 </td>
 <td style="text-align:left;">
-12 month expect credit loss
+accidental damage
 </td>
 <td style="text-align:left;">
-12 - month expected credit losses
+accidental damage
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+102
+</td>
+<td style="text-align:left;">
+accommodation bill
+</td>
+<td style="text-align:left;">
+accommodation bill
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+103
+</td>
+<td style="text-align:left;">
+accommodation endorsement
+</td>
+<td style="text-align:left;">
+accomodation endorsement
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+104
+</td>
+<td style="text-align:left;">
+accommodation party
+</td>
+<td style="text-align:left;">
+accommodation party
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+105
+</td>
+<td style="text-align:left;">
+accord and satisfaction
+</td>
+<td style="text-align:left;">
+accord and satisfaction
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+106
+</td>
+<td style="text-align:left;">
+accord to the technical principle of life assurance
+</td>
+<td style="text-align:left;">
+according to the technical principles of life assurance
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+107
+</td>
+<td style="text-align:left;">
+account
+</td>
+<td style="text-align:left;">
+account\|accounts
 </td>
 <td style="text-align:left;">
 FinA
@@ -509,17 +579,18 @@ FinA
 GAAP
 </td>
 <td style="text-align:left;">
+BS
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-5
+108
 </td>
 <td style="text-align:left;">
-13 th period
+account administration charge
 </td>
 <td style="text-align:left;">
-13 th period
+account administration charges
 </td>
 <td style="text-align:left;">
 BusA
@@ -531,85 +602,13 @@ BusA
 </tr>
 <tr>
 <td style="text-align:right;">
-6
+109
 </td>
 <td style="text-align:left;">
-15 minute rule
+account aging
 </td>
 <td style="text-align:left;">
-15 minute rule
-</td>
-<td style="text-align:left;">
-BusA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:left;">
-18 25 trust
-</td>
-<td style="text-align:left;">
-18 - 25 trust
-</td>
-<td style="text-align:left;">
-BusA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:left;">
-2 way match
-</td>
-<td style="text-align:left;">
-2 - way matching
-</td>
-<td style="text-align:left;">
-BusA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:left;">
-3 rule
-</td>
-<td style="text-align:left;">
-3% rule
-</td>
-<td style="text-align:left;">
-FinA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:left;">
-3 way match
-</td>
-<td style="text-align:left;">
-3 - way matching
+account aging
 </td>
 <td style="text-align:left;">
 BusA

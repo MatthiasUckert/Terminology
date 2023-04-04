@@ -109,7 +109,7 @@ The concept list includes the following columns:
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 ter %>%
   dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::if_else(is.na(.), "", .))) %>%
-  dplyr::slice(1:10) %>%
+  dplyr::slice(100:109) %>%
   knitr::kable() %>%
   kableExtra::kable_paper() %>%
   kableExtra::kable_styling(font_size = 10, full_width = TRUE)
