@@ -1043,19 +1043,19 @@ lemma_new
 compund
 </th>
 <th style="text-align:right;">
-non.english
+non_english
 </th>
 <th style="text-align:right;">
-acronym/abbreviation
+acronym_abbreviation
 </th>
 <th style="text-align:right;">
-location/language
+location_language
 </th>
 <th style="text-align:right;">
-monetary.unit
+monetary_unit
 </th>
 <th style="text-align:right;">
-proper.noun
+proper_noun
 </th>
 </tr>
 </thead>

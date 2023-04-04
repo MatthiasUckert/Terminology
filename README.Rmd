@@ -195,6 +195,7 @@ The full list can be downloaded <a href="2_output/lemma_list.xlsx" download="2_o
 
 ```{r echo=FALSE}
 openxlsx::read.xlsx("2_output/lemma_list.xlsx") %>%
+  janitor::clean_names() %>%
   dplyr::filter(startsWith(token, "a")) %>%
   dplyr::slice(20:30) %>%
   dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::if_else(is.na(.), "", .))) %>%
