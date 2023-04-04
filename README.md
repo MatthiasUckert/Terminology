@@ -8,6 +8,284 @@ Paper:
 
 ***“The Standardization of Accounting Language”.***
 
+# Term List
+
+The full term list can be downloaded
+<a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
+
+The concept list includes the following columns:
+
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Column</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>cid</code></td>
+<td style="text-align: left;">The Concept Identifier</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tid</code></td>
+<td style="text-align: left;">The Term Identifier</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>term</code></td>
+<td style="text-align: left;">The standardized Term</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>term_raw</code></td>
+<td style="text-align: left;">The raw Term</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>cat1</code></td>
+<td style="text-align: left;"><p><strong>Category 1:</strong> Indicator
+column to what class a concept belongs</p>
+<ul>
+<li><p><strong>FinA</strong>: Financial Accounting Concept</p></li>
+<li><p><strong>ManA</strong>: Managerial Accounting Concepts</p></li>
+<li><p><strong>BusA</strong>: Business Concepts</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><code>cat2</code></strong></td>
+<td style="text-align: left;"><p><strong>Category 2:</strong> Indicator
+column to what class a concept belongs</p>
+<ul>
+<li><strong>GAAP:</strong> Either an IFRS or US GAAP Concept</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>cat3</code></td>
+<td style="text-align: left;"><p><strong>Category 3:</strong> Indicator
+column to what class a concept belongs</p>
+<ul>
+<li><p><strong>IS</strong>: Income Statement Concepts</p></li>
+<li><p><strong>BS:</strong> Balance Sheet Concepts</p></li>
+<li><p><strong>CF:</strong> Cash Flow Statement Concepts</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+The table below shows the first ten terms of our term list:
+
+<table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+tid
+</th>
+<th style="text-align:left;">
+term
+</th>
+<th style="text-align:left;">
+term_raw
+</th>
+<th style="text-align:left;">
+cat1
+</th>
+<th style="text-align:left;">
+cat2
+</th>
+<th style="text-align:left;">
+cat3
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:left;">
+accident year
+</td>
+<td style="text-align:left;">
+accident year
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+GAAP
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+101
+</td>
+<td style="text-align:left;">
+accidental damage
+</td>
+<td style="text-align:left;">
+accidental damage
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+102
+</td>
+<td style="text-align:left;">
+accommodation bill
+</td>
+<td style="text-align:left;">
+accommodation bill
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+103
+</td>
+<td style="text-align:left;">
+accommodation endorsement
+</td>
+<td style="text-align:left;">
+accomodation endorsement
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+104
+</td>
+<td style="text-align:left;">
+accommodation party
+</td>
+<td style="text-align:left;">
+accommodation party
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+105
+</td>
+<td style="text-align:left;">
+accord and satisfaction
+</td>
+<td style="text-align:left;">
+accord and satisfaction
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+106
+</td>
+<td style="text-align:left;">
+accord to the technical principle of life assurance
+</td>
+<td style="text-align:left;">
+according to the technical principles of life assurance
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+107
+</td>
+<td style="text-align:left;">
+account
+</td>
+<td style="text-align:left;">
+account\|accounts
+</td>
+<td style="text-align:left;">
+FinA
+</td>
+<td style="text-align:left;">
+GAAP
+</td>
+<td style="text-align:left;">
+BS
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+108
+</td>
+<td style="text-align:left;">
+account administration charge
+</td>
+<td style="text-align:left;">
+account administration charges
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+109
+</td>
+<td style="text-align:left;">
+account aging
+</td>
+<td style="text-align:left;">
+account aging
+</td>
+<td style="text-align:left;">
+BusA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+
 # Concept List
 
 The full concept list can be downloaded
@@ -447,284 +725,6 @@ CF
 </td>
 <td style="text-align:right;">
 0.676223
-</td>
-</tr>
-</tbody>
-</table>
-
-# Term List
-
-The full term list can be downloaded
-<a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
-
-The concept list includes the following columns:
-
-<table>
-<colgroup>
-<col style="width: 18%" />
-<col style="width: 81%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Column</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><code>cid</code></td>
-<td style="text-align: left;">The Concept Identifier</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>tid</code></td>
-<td style="text-align: left;">The Term Identifier</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>term</code></td>
-<td style="text-align: left;">The standardized Term</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>term_raw</code></td>
-<td style="text-align: left;">The raw Term</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>cat1</code></td>
-<td style="text-align: left;"><p><strong>Category 1:</strong> Indicator
-column to what class a concept belongs</p>
-<ul>
-<li><p><strong>FinA</strong>: Financial Accounting Concept</p></li>
-<li><p><strong>ManA</strong>: Managerial Accounting Concepts</p></li>
-<li><p><strong>BusA</strong>: Business Concepts</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong><code>cat2</code></strong></td>
-<td style="text-align: left;"><p><strong>Category 2:</strong> Indicator
-column to what class a concept belongs</p>
-<ul>
-<li><strong>GAAP:</strong> Either an IFRS or US GAAP Concept</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>cat3</code></td>
-<td style="text-align: left;"><p><strong>Category 3:</strong> Indicator
-column to what class a concept belongs</p>
-<ul>
-<li><p><strong>IS</strong>: Income Statement Concepts</p></li>
-<li><p><strong>BS:</strong> Balance Sheet Concepts</p></li>
-<li><p><strong>CF:</strong> Cash Flow Statement Concepts</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-The table below shows the first ten terms of our term list:
-
-<table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:right;">
-tid
-</th>
-<th style="text-align:left;">
-term
-</th>
-<th style="text-align:left;">
-term_raw
-</th>
-<th style="text-align:left;">
-cat1
-</th>
-<th style="text-align:left;">
-cat2
-</th>
-<th style="text-align:left;">
-cat3
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right;">
-100
-</td>
-<td style="text-align:left;">
-accident year
-</td>
-<td style="text-align:left;">
-accident year
-</td>
-<td style="text-align:left;">
-BusA
-</td>
-<td style="text-align:left;">
-GAAP
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-101
-</td>
-<td style="text-align:left;">
-accidental damage
-</td>
-<td style="text-align:left;">
-accidental damage
-</td>
-<td style="text-align:left;">
-BusA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-102
-</td>
-<td style="text-align:left;">
-accommodation bill
-</td>
-<td style="text-align:left;">
-accommodation bill
-</td>
-<td style="text-align:left;">
-BusA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-103
-</td>
-<td style="text-align:left;">
-accommodation endorsement
-</td>
-<td style="text-align:left;">
-accomodation endorsement
-</td>
-<td style="text-align:left;">
-BusA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-104
-</td>
-<td style="text-align:left;">
-accommodation party
-</td>
-<td style="text-align:left;">
-accommodation party
-</td>
-<td style="text-align:left;">
-BusA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-105
-</td>
-<td style="text-align:left;">
-accord and satisfaction
-</td>
-<td style="text-align:left;">
-accord and satisfaction
-</td>
-<td style="text-align:left;">
-BusA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-106
-</td>
-<td style="text-align:left;">
-accord to the technical principle of life assurance
-</td>
-<td style="text-align:left;">
-according to the technical principles of life assurance
-</td>
-<td style="text-align:left;">
-BusA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-107
-</td>
-<td style="text-align:left;">
-account
-</td>
-<td style="text-align:left;">
-account\|accounts
-</td>
-<td style="text-align:left;">
-FinA
-</td>
-<td style="text-align:left;">
-GAAP
-</td>
-<td style="text-align:left;">
-BS
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-108
-</td>
-<td style="text-align:left;">
-account administration charge
-</td>
-<td style="text-align:left;">
-account administration charges
-</td>
-<td style="text-align:left;">
-BusA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-109
-</td>
-<td style="text-align:left;">
-account aging
-</td>
-<td style="text-align:left;">
-account aging
-</td>
-<td style="text-align:left;">
-BusA
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
 </td>
 </tr>
 </tbody>

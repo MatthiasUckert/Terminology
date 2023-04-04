@@ -43,6 +43,56 @@ if (!file.exists("2_output/term_list.xlsx")) {
 
 ```
 
+# Term List
+
+The full term list can be downloaded <a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
+
+The concept list includes the following columns:
+
++---------------+------------------------------------------------------------------+
+| Column        | Description                                                      |
++:==============+:=================================================================+
+| `cid`         | The Concept Identifier                                           |
++---------------+------------------------------------------------------------------+
+| `tid`         | The Term Identifier                                              |
++---------------+------------------------------------------------------------------+
+| `term`        | The standardized Term                                            |
++---------------+------------------------------------------------------------------+
+| `term_raw`    | The raw Term                                                     |
++---------------+------------------------------------------------------------------+
+| `cat1`        | **Category 1:** Indicator column to what class a concept belongs |
+|               |                                                                  |
+|               | -   **FinA**: Financial Accounting Concept                       |
+|               |                                                                  |
+|               | -   **ManA**: Managerial Accounting Concepts                     |
+|               |                                                                  |
+|               | -   **BusA**: Business Concepts                                  |
++---------------+------------------------------------------------------------------+
+| **`cat2`**    | **Category 2:** Indicator column to what class a concept belongs |
+|               |                                                                  |
+|               | -   **GAAP:** Either an IFRS or US GAAP Concept                  |
++---------------+------------------------------------------------------------------+
+| `cat3`        | **Category 3:** Indicator column to what class a concept belongs |
+|               |                                                                  |
+|               | -   **IS**: Income Statement Concepts                            |
+|               |                                                                  |
+|               | -   **BS:** Balance Sheet Concepts                               |
+|               |                                                                  |
+|               | -   **CF:** Cash Flow Statement Concepts                         |
++---------------+------------------------------------------------------------------+
+
+The table below shows the first ten terms of our term list:
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+ter %>%
+  dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::if_else(is.na(.), "", .))) %>%
+  dplyr::slice(100:109) %>%
+  knitr::kable() %>%
+  kableExtra::kable_paper() %>%
+  kableExtra::kable_styling(font_size = 10, full_width = TRUE)
+
+```
+
 # Concept List
 
 The full concept list can be downloaded <a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>.
@@ -111,56 +161,6 @@ con %>%
   knitr::kable() %>%
   kableExtra::kable_paper() %>%
   kableExtra::kable_styling(font_size = 10, full_width = TRUE)
-```
-
-# Term List
-
-The full term list can be downloaded <a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
-
-The concept list includes the following columns:
-
-+--------------+------------------------------------------------------------------+
-| Column       | Description                                                      |
-+:=============+:=================================================================+
-| `cid`        | The Concept Identifier                                           |
-+--------------+------------------------------------------------------------------+
-| `tid`        | The Term Identifier                                              |
-+--------------+------------------------------------------------------------------+
-| `term`       | The standardized Term                                            |
-+--------------+------------------------------------------------------------------+
-| `term_raw`   | The raw Term                                                     |
-+--------------+------------------------------------------------------------------+
-| `cat1`       | **Category 1:** Indicator column to what class a concept belongs |
-|              |                                                                  |
-|              | -   **FinA**: Financial Accounting Concept                       |
-|              |                                                                  |
-|              | -   **ManA**: Managerial Accounting Concepts                     |
-|              |                                                                  |
-|              | -   **BusA**: Business Concepts                                  |
-+--------------+------------------------------------------------------------------+
-| **`cat2`**   | **Category 2:** Indicator column to what class a concept belongs |
-|              |                                                                  |
-|              | -   **GAAP:** Either an IFRS or US GAAP Concept                  |
-+--------------+------------------------------------------------------------------+
-| `cat3`       | **Category 3:** Indicator column to what class a concept belongs |
-|              |                                                                  |
-|              | -   **IS**: Income Statement Concepts                            |
-|              |                                                                  |
-|              | -   **BS:** Balance Sheet Concepts                               |
-|              |                                                                  |
-|              | -   **CF:** Cash Flow Statement Concepts                         |
-+--------------+------------------------------------------------------------------+
-
-The table below shows the first ten terms of our term list:
-
-```{r message=FALSE, warning=FALSE, echo=FALSE}
-ter %>%
-  dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::if_else(is.na(.), "", .))) %>%
-  dplyr::slice(100:109) %>%
-  knitr::kable() %>%
-  kableExtra::kable_paper() %>%
-  kableExtra::kable_styling(font_size = 10, full_width = TRUE)
-
 ```
 
 # Additional Input Lists
