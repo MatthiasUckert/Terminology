@@ -45,7 +45,7 @@ if (!file.exists("2_output/term_list.xlsx")) {
 
 # Concept List
 
-The tables below show two example concepts for the paper: ***"The Standardization of Accounting Language".***
+The tables below show two example concepts.
 
 The full concept list can be downloaded <a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>.
 
@@ -90,7 +90,7 @@ con %>%
 
 # Term List
 
-The table below shows the first ten terms for the paper: ***"The Standardization of Accounting Language".***
+The table below shows the first ten terms of our term list.
 
 The full concept list can be downloaded <a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
 
