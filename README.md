@@ -649,6 +649,8 @@ different word combinations.
 The full list can be downloaded
 <a href="2_output/us_uk.xlsx" download="2_output/us_uk.xlsx">here</a>.
 
+Below we show the first ten entries of this list:
+
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -761,6 +763,8 @@ current”).
 The full list can be downloaded
 <a href="2_output/split_terms.xlsx" download="2_output/split_terms.xlsx">here</a>.
 
+Below we show the first ten entries of this list:
+
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -870,6 +874,8 @@ our raw sources.
 
 The full list can be downloaded
 <a href="2_output/stopwords.xlsx" download="2_output/stopwords.xlsx">here</a>.
+
+Below we show the first ten entries of this list:
 
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -1024,6 +1030,8 @@ plurals (e.g., “assets” and “asset”) and remove all punctuation
 The full list can be downloaded
 <a href="2_output/lemma_list.xlsx" download="2_output/lemma_list.xlsx">here</a>.
 
+Below we show the first ten entries of this list:
+
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1060,38 +1068,6 @@ proper_noun
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-abominations
-</td>
-<td style="text-align:left;">
-abomination
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:left;">
-0
-</td>
-<td style="text-align:left;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
-</tr>
 <tr>
 <td style="text-align:left;">
 aborted

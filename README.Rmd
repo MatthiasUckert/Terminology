@@ -132,6 +132,8 @@ We normalize different varieties of English (i.e., "capitalization" and "capital
 
 The full list can be downloaded <a href="2_output/us_uk.xlsx" download="2_output/us_uk.xlsx">here</a>.
 
+Below we show the first ten entries of this list:
+
 ```{r echo=FALSE}
 openxlsx::read.xlsx("2_output/us_uk.xlsx") %>%
   dplyr::select(-origin) %>%
@@ -149,6 +151,8 @@ We account for stylistic differences arising from different hyphenations and the
 :::
 
 The full list can be downloaded <a href="2_output/split_terms.xlsx" download="2_output/split_terms.xlsx">here</a>.
+
+Below we show the first ten entries of this list:
 
 ```{r echo=FALSE}
 openxlsx::read.xlsx("2_output/split_terms.xlsx") %>%
@@ -168,6 +172,8 @@ We remove terms that equal a stop word (e.g., "and", "or", ...) by complementing
 :::
 
 The full list can be downloaded <a href="2_output/stopwords.xlsx" download="2_output/stopwords.xlsx">here</a>.
+
+Below we show the first ten entries of this list:
 
 ```{r echo=FALSE}
 openxlsx::read.xlsx("2_output/stopwords.xlsx") %>%
@@ -193,11 +199,13 @@ We lemmatize our terms to account for different inflectional endings and plurals
 
 The full list can be downloaded <a href="2_output/lemma_list.xlsx" download="2_output/lemma_list.xlsx">here</a>.
 
+Below we show the first ten entries of this list:
+
 ```{r echo=FALSE}
 openxlsx::read.xlsx("2_output/lemma_list.xlsx") %>%
   janitor::clean_names() %>%
   dplyr::filter(startsWith(token, "a")) %>%
-  dplyr::slice(20:30) %>%
+  dplyr::slice(21:30) %>%
   dplyr::mutate(dplyr::across(where(is.character), ~ dplyr::if_else(is.na(.), "", .))) %>%
   knitr::kable() %>%
   kableExtra::kable_paper() %>%
