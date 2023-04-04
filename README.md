@@ -10,8 +10,6 @@ Paper:
 
 # Concept List
 
-The tables below show two example concepts.
-
 The full concept list can be downloaded
 <a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>.
 
@@ -29,6 +27,8 @@ The concept list includes the following columns:
 | `avg_sim`       | Average textual similarity of the terms within the concept                                                                                                      |
 | `size`          | The size of the concept (i.e. how many terms are grouped within a concept)                                                                                      |
 | `complex_score` | Linear combination of size, avg_ngram and avg_sim (Scaled between 0-1)                                                                                          |
+
+The tables below show two example concepts for our concept list.
 
 ## Concept 1: ABC Costing
 
@@ -392,9 +392,7 @@ CF
 
 # Term List
 
-The table below shows the first ten terms of our term list.
-
-The full concept list can be downloaded
+The full term list can be downloaded
 <a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
 
 The concept list includes the following columns:
@@ -409,6 +407,7 @@ The concept list includes the following columns:
 | **`cat2`** | **Category 2:** Indicator column if the concept is a **GAAP** concept                                                                                           |
 | `cat3`     | **Category 3:** which includes **“IS”** for Income Statement Concepts, **“BS”** for Balance Sheet Concepts and **“CF”** for Cash Flow Statement Concepts        |
 
+The table below shows the first ten terms of our term list:
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
