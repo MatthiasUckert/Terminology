@@ -1003,8 +1003,8 @@ The full list can be downloaded
 
 <table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 85%" />
+<col style="width: 12%" />
+<col style="width: 87%" />
 </colgroup>
 <thead>
 <tr class="header">
