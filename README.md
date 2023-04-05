@@ -70,7 +70,7 @@ column to which category a term belongs</p>
 </tbody>
 </table>
 
-## Example
+## Example (Term List)
 
 The table below shows the first ten terms of our term list:
 
@@ -279,6 +279,243 @@ BusA
 <td style="text-align:left;">
 </td>
 <td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+
+## Frequency Count of our Term List
+
+In addition to our term list, we also make our frequency count available
+(see Table 4, Panel A in the paper).
+
+The full frequency count can be downloaded
+<a href="2_output/term_frequency.xlsx" download="2_output/term_frequency.xlsx">here</a>.
+
+Below we show the ten terms with the highest frequency in our sample:
+
+<table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Rank
+</th>
+<th style="text-align:right;">
+Term Identifier (tid)
+</th>
+<th style="text-align:left;">
+Term
+</th>
+<th style="text-align:right;">
+Ngram
+</th>
+<th style="text-align:left;">
+N
+</th>
+<th style="text-align:left;">
+Obs.
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+7779
+</td>
+<td style="text-align:left;">
+company
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+92,356,719
+</td>
+<td style="text-align:left;">
+332,905
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+23521
+</td>
+<td style="text-align:left;">
+group
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+35,420,534
+</td>
+<td style="text-align:left;">
+318,656
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+44967
+</td>
+<td style="text-align:left;">
+share
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+29,352,013
+</td>
+<td style="text-align:left;">
+332,721
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+14874
+</td>
+<td style="text-align:left;">
+director
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+22,568,896
+</td>
+<td style="text-align:left;">
+331,177
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+33906
+</td>
+<td style="text-align:left;">
+note
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+22,520,161
+</td>
+<td style="text-align:left;">
+330,833
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+4561
+</td>
+<td style="text-align:left;">
+business
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+20,308,519
+</td>
+<td style="text-align:left;">
+332,052
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+42320
+</td>
+<td style="text-align:left;">
+result
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+20,139,647
+</td>
+<td style="text-align:left;">
+332,327
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+31202
+</td>
+<td style="text-align:left;">
+management
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+17,967,197
+</td>
+<td style="text-align:left;">
+331,979
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+50960
+</td>
+<td style="text-align:left;">
+year end
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+17,101,874
+</td>
+<td style="text-align:left;">
+329,286
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+39215
+</td>
+<td style="text-align:left;">
+product
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+16,985,537
+</td>
+<td style="text-align:left;">
+308,939
 </td>
 </tr>
 </tbody>
@@ -723,6 +960,690 @@ CF
 </td>
 <td style="text-align:right;">
 0.676223
+</td>
+</tr>
+</tbody>
+</table>
+
+## Frequency Count of our Concept List
+
+In addition to our concept list, we also make our frequency count
+available (see Table 4, Panel B in the paper).
+
+The full frequency count can be downloaded
+<a href="2_output/concept_frequency.xlsx" download="2_output/concept_frequency.xlsx">here</a>.
+
+Below we show the 5 concepts with the highest frequency in our sample:
+
+<table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Rank (Concept)
+</th>
+<th style="text-align:right;">
+Concept Identifier (cid)
+</th>
+<th style="text-align:left;">
+Concept Name
+</th>
+<th style="text-align:left;">
+N (Concept)
+</th>
+<th style="text-align:right;">
+Rank (term)
+</th>
+<th style="text-align:right;">
+Term Identifier (tid)
+</th>
+<th style="text-align:left;">
+Term
+</th>
+<th style="text-align:right;">
+Ngram
+</th>
+<th style="text-align:left;">
+N (Term)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:left;">
+REVENUE
+</td>
+<td style="text-align:left;">
+28,604,156
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+43368
+</td>
+<td style="text-align:left;">
+sale
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+15,616,406
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:left;">
+REVENUE
+</td>
+<td style="text-align:left;">
+28,604,156
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+42737
+</td>
+<td style="text-align:left;">
+revenue
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+11,090,680
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:left;">
+REVENUE
+</td>
+<td style="text-align:left;">
+28,604,156
+</td>
+<td style="text-align:right;">
+81
+</td>
+<td style="text-align:right;">
+48420
+</td>
+<td style="text-align:left;">
+total revenue
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+903,723
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:left;">
+REVENUE
+</td>
+<td style="text-align:left;">
+28,604,156
+</td>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:right;">
+49062
+</td>
+<td style="text-align:left;">
+turnover
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+728,738
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:left;">
+REVENUE
+</td>
+<td style="text-align:left;">
+28,604,156
+</td>
+<td style="text-align:right;">
+197
+</td>
+<td style="text-align:right;">
+43541
+</td>
+<td style="text-align:left;">
+sale revenue
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+234,453
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:left;">
+REVENUE
+</td>
+<td style="text-align:left;">
+28,604,156
+</td>
+<td style="text-align:right;">
+514
+</td>
+<td style="text-align:right;">
+48191
+</td>
+<td style="text-align:left;">
+top line
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+30,156
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:left;">
+ACCOUNTING INCOME
+</td>
+<td style="text-align:left;">
+18,828,844
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+24885
+</td>
+<td style="text-align:left;">
+income
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+5,882,391
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:left;">
+ACCOUNTING INCOME
+</td>
+<td style="text-align:left;">
+18,828,844
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+39375
+</td>
+<td style="text-align:left;">
+profit
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+4,098,631
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:left;">
+ACCOUNTING INCOME
+</td>
+<td style="text-align:left;">
+18,828,844
+</td>
+<td style="text-align:right;">
+22
+</td>
+<td style="text-align:right;">
+32975
+</td>
+<td style="text-align:left;">
+net income
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+3,579,463
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:left;">
+ACCOUNTING INCOME
+</td>
+<td style="text-align:left;">
+18,828,844
+</td>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:right;">
+16497
+</td>
+<td style="text-align:left;">
+earning
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+3,350,709
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:left;">
+ACCOUNTING INCOME
+</td>
+<td style="text-align:left;">
+18,828,844
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+33167
+</td>
+<td style="text-align:left;">
+net profit
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+1,076,848
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:left;">
+ACCOUNTING INCOME
+</td>
+<td style="text-align:left;">
+18,828,844
+</td>
+<td style="text-align:right;">
+90
+</td>
+<td style="text-align:right;">
+39378
+</td>
+<td style="text-align:left;">
+profit and loss
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+781,740
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:left;">
+ACCOUNTING INCOME
+</td>
+<td style="text-align:left;">
+18,828,844
+</td>
+<td style="text-align:right;">
+502
+</td>
+<td style="text-align:right;">
+4407
+</td>
+<td style="text-align:left;">
+bottom line
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+31,613
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:left;">
+ACCOUNTING INCOME
+</td>
+<td style="text-align:left;">
+18,828,844
+</td>
+<td style="text-align:right;">
+536
+</td>
+<td style="text-align:right;">
+313
+</td>
+<td style="text-align:left;">
+accounting income
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+27,449
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+596
+</td>
+<td style="text-align:left;">
+DEFICIT
+</td>
+<td style="text-align:left;">
+16,448,788
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+30845
+</td>
+<td style="text-align:left;">
+loss
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+13,910,659
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+596
+</td>
+<td style="text-align:left;">
+DEFICIT
+</td>
+<td style="text-align:left;">
+16,448,788
+</td>
+<td style="text-align:right;">
+41
+</td>
+<td style="text-align:right;">
+33106
+</td>
+<td style="text-align:left;">
+net loss
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+1,854,666
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+596
+</td>
+<td style="text-align:left;">
+DEFICIT
+</td>
+<td style="text-align:left;">
+16,448,788
+</td>
+<td style="text-align:right;">
+99
+</td>
+<td style="text-align:right;">
+11709
+</td>
+<td style="text-align:left;">
+deficit
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+683,463
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+130
+</td>
+<td style="text-align:left;">
+SHAREHOLDER
+</td>
+<td style="text-align:left;">
+14,193,460
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+45455
+</td>
+<td style="text-align:left;">
+shareholder
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+11,374,269
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+130
+</td>
+<td style="text-align:left;">
+SHAREHOLDER
+</td>
+<td style="text-align:left;">
+14,193,460
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+46618
+</td>
+<td style="text-align:left;">
+stockholder
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+2,818,580
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+130
+</td>
+<td style="text-align:left;">
+SHAREHOLDER
+</td>
+<td style="text-align:left;">
+14,193,460
+</td>
+<td style="text-align:right;">
+1288
+</td>
+<td style="text-align:right;">
+45468
+</td>
+<td style="text-align:left;">
+shareholder or member
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+611
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+535
+</td>
+<td style="text-align:left;">
+FINANCIAL REPORT
+</td>
+<td style="text-align:left;">
+13,437,224
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+20968
+</td>
+<td style="text-align:left;">
+financial statement
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+12,410,384
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+535
+</td>
+<td style="text-align:left;">
+FINANCIAL REPORT
+</td>
+<td style="text-align:left;">
+13,437,224
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+20932
+</td>
+<td style="text-align:left;">
+financial report
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+1,026,840
 </td>
 </tr>
 </tbody>

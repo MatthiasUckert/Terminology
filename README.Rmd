@@ -79,7 +79,7 @@ The full term list can be downloaded <a href="2_output/term_list.xlsx" download=
 |              | -   **CF:** Cash Flow Statement Concepts                          |
 +--------------+-------------------------------------------------------------------+
 
-## Example
+## Example (Term List)
 
 The table below shows the first ten terms of our term list:
 
@@ -91,6 +91,28 @@ ter %>%
   kableExtra::kable_paper() %>%
   kableExtra::kable_styling(font_size = 10, full_width = TRUE)
 
+```
+
+## Frequency Count of our Term List
+
+In addition to our term list, we also make our frequency count available (see Table 4, Panel A in the paper).
+
+The full frequency count can be downloaded <a href="2_output/term_frequency.xlsx" download="2_output/term_frequency.xlsx">here</a>.
+
+Below we show the ten terms with the highest frequency in our sample:
+
+```{r echo=FALSE}
+openxlsx::read.xlsx("2_output/term_frequency.xlsx", rows = 1:11) %>%
+  `colnames<-`(gsub("\\.", " ", colnames(.))) %>%
+  dplyr::rename(`Obs.` = `Obs `) %>%
+  dplyr::mutate(
+    N = scales::comma(N),
+    `Obs.` = scales::comma(`Obs.`),
+  ) %>%
+  tibble::as_tibble() %>%
+  knitr::kable() %>%
+  kableExtra::kable_paper() %>%
+  kableExtra::kable_styling(font_size = 10, full_width = TRUE)
 ```
 
 # Concept List
@@ -163,6 +185,29 @@ con %>%
   kableExtra::kable_styling(font_size = 10, full_width = TRUE)
 ```
 
+## Frequency Count of our Concept List
+
+In addition to our concept list, we also make our frequency count available (see Table 4, Panel B in the paper).
+
+The full frequency count can be downloaded <a href="2_output/concept_frequency.xlsx" download="2_output/concept_frequency.xlsx">here</a>.
+
+Below we show the 5 concepts with the highest frequency in our sample:
+
+```{r echo=FALSE}
+openxlsx::read.xlsx("2_output/concept_frequency.xlsx", rows = 1:100) %>%
+  dplyr::filter(`Rank.(Concept)` %in% 1:5) %>%
+  `colnames<-`(gsub("\\.", " ", colnames(.))) %>%
+  dplyr::mutate(
+    `N (Concept)` = scales::comma(`N (Concept)`),
+    `N (Term)` = scales::comma(`N (Term)`),
+  ) %>%
+  tibble::as_tibble() %>%
+  knitr::kable() %>%
+  kableExtra::kable_paper() %>%
+  kableExtra::kable_styling(font_size = 10, full_width = TRUE)
+```
+
+
 # Additional Input Lists
 
 ::: {style="text-align: justify"}
@@ -181,13 +226,13 @@ The full list can be downloaded <a href="2_output/us_uk.xlsx" download="2_output
 
 ### Column Description
 
-+---------------+----------------------------------------------------+
-| Column        | Description                                        |
-+:==============+:===================================================+
-| `uk`          | Word written in British English                    |
-+---------------+----------------------------------------------------+
-| `us`          | Word written in American English                   |
-+---------------+----------------------------------------------------+
++---------------+--------------------------------------------------+
+| Column        | Description                                      |
++:==============+:=================================================+
+| `uk`          | Word written in British English                  |
++---------------+--------------------------------------------------+
+| `us`          | Word written in American English                 |
++---------------+--------------------------------------------------+
 
 ### Example
 
@@ -213,13 +258,13 @@ The full list can be downloaded <a href="2_output/split_terms.xlsx" download="2_
 
 ### Column Description
 
-+----------------+----------------------------------------------------+
-| Column         | Description                                        |
-+:===============+:===================================================+
-| `unsplit`      | Compound word written together                     |
-+----------------+----------------------------------------------------+
-| `us`           | Compound word separated by a space character       |
-+----------------+----------------------------------------------------+
++----------------+---------------------------------------------------+
+| Column         | Description                                       |
++:===============+:==================================================+
+| `unsplit`      | Compound word written together                    |
++----------------+---------------------------------------------------+
+| `us`           | Compound word separated by a space character      |
++----------------+---------------------------------------------------+
 
 ### Example
 
