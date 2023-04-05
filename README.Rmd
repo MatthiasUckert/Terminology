@@ -47,39 +47,39 @@ if (!file.exists("2_output/term_list.xlsx")) {
 
 The full term list can be downloaded <a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
 
-The concept list includes the following columns:
+## Column Description
 
-+---------------+------------------------------------------------------------------+
-| Column        | Description                                                      |
-+:==============+:=================================================================+
-| `cid`         | The Concept Identifier                                           |
-+---------------+------------------------------------------------------------------+
-| `tid`         | The Term Identifier                                              |
-+---------------+------------------------------------------------------------------+
-| `term`        | The standardized Term                                            |
-+---------------+------------------------------------------------------------------+
-| `term_raw`    | The raw Term                                                     |
-+---------------+------------------------------------------------------------------+
-| `cat1`        | **Category 1:** Indicator column to what class a concept belongs |
-|               |                                                                  |
-|               | -   **FinA**: Financial Accounting Concept                       |
-|               |                                                                  |
-|               | -   **ManA**: Managerial Accounting Concepts                     |
-|               |                                                                  |
-|               | -   **BusA**: Business Concepts                                  |
-+---------------+------------------------------------------------------------------+
-| **`cat2`**    | **Category 2:** Indicator column to what class a concept belongs |
-|               |                                                                  |
-|               | -   **GAAP:** Either an IFRS or US GAAP Concept                  |
-+---------------+------------------------------------------------------------------+
-| `cat3`        | **Category 3:** Indicator column to what class a concept belongs |
-|               |                                                                  |
-|               | -   **IS**: Income Statement Concepts                            |
-|               |                                                                  |
-|               | -   **BS:** Balance Sheet Concepts                               |
-|               |                                                                  |
-|               | -   **CF:** Cash Flow Statement Concepts                         |
-+---------------+------------------------------------------------------------------+
++--------------+-------------------------------------------------------------------+
+| Column       | Description                                                       |
++:=============+:==================================================================+
+| `tid`        | The Term Identifier                                               |
++--------------+-------------------------------------------------------------------+
+| `term`       | The standardized Term                                             |
++--------------+-------------------------------------------------------------------+
+| `term_raw`   | The raw Term                                                      |
++--------------+-------------------------------------------------------------------+
+| `cat1`       | **Category 1:** Indicator column to which category a term belongs |
+|              |                                                                   |
+|              | -   **FinA**: Financial Accounting Concept                        |
+|              |                                                                   |
+|              | -   **ManA**: Managerial Accounting Concepts                      |
+|              |                                                                   |
+|              | -   **BusA**: Business Concepts                                   |
++--------------+-------------------------------------------------------------------+
+| **`cat2`**   | **Category 2:** Indicator column to which category a term belongs |
+|              |                                                                   |
+|              | -   **GAAP:** Either an IFRS or US GAAP Concept                   |
++--------------+-------------------------------------------------------------------+
+| `cat3`       | **Category 3:** Indicator column to which category a term belongs |
+|              |                                                                   |
+|              | -   **IS**: Income Statement Concepts                             |
+|              |                                                                   |
+|              | -   **BS:** Balance Sheet Concepts                                |
+|              |                                                                   |
+|              | -   **CF:** Cash Flow Statement Concepts                          |
++--------------+-------------------------------------------------------------------+
+
+## Example
 
 The table below shows the first ten terms of our term list:
 
@@ -97,7 +97,7 @@ ter %>%
 
 The full concept list can be downloaded <a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>.
 
-The concept list includes the following columns:
+## Column Description
 
 +-----------------+----------------------------------------------------------------------------------------------------+
 | Column          | Description                                                                                        |
@@ -108,7 +108,7 @@ The concept list includes the following columns:
 +-----------------+----------------------------------------------------------------------------------------------------+
 | `term`          | The standardized Term                                                                              |
 +-----------------+----------------------------------------------------------------------------------------------------+
-| `cat1`          | **Category 1:** Indicator column to what class a concept belongs                                   |
+| `cat1`          | **Category 1:** Indicator column to which class a concept belongs                                  |
 |                 |                                                                                                    |
 |                 | -   **FinA**: Financial Accounting Concept                                                         |
 |                 |                                                                                                    |
@@ -116,11 +116,11 @@ The concept list includes the following columns:
 |                 |                                                                                                    |
 |                 | -   **BusA**: Business Concepts                                                                    |
 +-----------------+----------------------------------------------------------------------------------------------------+
-| **`cat2`**      | **Category 2:** Indicator column to what class a concept belongs                                   |
+| **`cat2`**      | **Category 2:** Indicator column to which class a concept belongs                                  |
 |                 |                                                                                                    |
 |                 | -   **GAAP:** Either an IFRS or US GAAP Concept                                                    |
 +-----------------+----------------------------------------------------------------------------------------------------+
-| `cat3`          | **Category 3:** Indicator column to what class a concept belongs                                   |
+| `cat3`          | **Category 3:** Indicator column to which class a concept belongs                                  |
 |                 |                                                                                                    |
 |                 | -   **IS**: Income Statement Concepts                                                              |
 |                 |                                                                                                    |
@@ -139,7 +139,7 @@ The concept list includes the following columns:
 
 The tables below show two example concepts for our concept list.
 
-## Concept 1: ABC Costing
+## Example Concept 1: ABC Costing
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 con %>%
@@ -151,7 +151,7 @@ con %>%
   kableExtra::kable_styling(font_size = 10, full_width = TRUE)
 ```
 
-## Concept 2: Accounts Payable
+## Example Concept 2: Accounts Payable
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
 con %>%
@@ -166,7 +166,7 @@ con %>%
 # Additional Input Lists
 
 ::: {style="text-align: justify"}
-In order to clean our term and concept list we use several additional input list, the complete pipeline can be seen in the Online Appendix to the paper (section 1).
+In order to clean our term and concept lists we use several additional input lists, the step-by-step description can be found in the Online Appendix to the paper (Section 1).
 :::
 
 ## British English vs. American English
@@ -175,9 +175,21 @@ In order to clean our term and concept list we use several additional input list
 We normalize different varieties of English (i.e., "capitalization" and "capitalisation") by converting all British-English spelling varieties of a word to American-English, we do so by relying on an American/British English Dictionary that contains more than 1,700 different word combinations.
 :::
 
-<http://www.tysto.com/uk-us-spelling-list.html>
+URL: <http://www.tysto.com/uk-us-spelling-list.html>
 
 The full list can be downloaded <a href="2_output/us_uk.xlsx" download="2_output/us_uk.xlsx">here</a>.
+
+### Column Description
+
++---------------+------------------------------------------------------+
+| Column        | Description                                          |
++:==============+:=====================================================+
+| `uk`          | Word written in British English                      |
++---------------+------------------------------------------------------+
+| `us`          | Word written in American English                     |
++---------------+------------------------------------------------------+
+
+### Example
 
 Below we show the first ten entries of this list:
 
@@ -191,13 +203,25 @@ openxlsx::read.xlsx("2_output/us_uk.xlsx") %>%
   kableExtra::kable_styling(font_size = 10, full_width = TRUE)
 ```
 
-## Stylistic Differences due to hyphenations
+## Stylistic Differences
 
 ::: {style="text-align: justify"}
 We account for stylistic differences arising from different hyphenations and the inclusion/exclusion of blank characters (i.e., "non-current assets", "non current assets" and "noncurrent assets"). For this purpose, we build a custom dictionary with more than 300 different split term pairs, and we always convert a word within a term to a split, hyphen-free version (i.e. the word "noncurrent" is converted to "non current").
 :::
 
 The full list can be downloaded <a href="2_output/split_terms.xlsx" download="2_output/split_terms.xlsx">here</a>.
+
+### Column Description
+
++----------------+-----------------------------------------------------+
+| Column         | Description                                         |
++:===============+:====================================================+
+| `unsplit`      | Compound word written together                      |
++----------------+-----------------------------------------------------+
+| `us`           | Compound word separated by a space character        |
++----------------+-----------------------------------------------------+
+
+### Example
 
 Below we show the first ten entries of this list:
 
@@ -219,6 +243,24 @@ We remove terms that equal a stop word (e.g., "and", "or", ...) by complementing
 :::
 
 The full list can be downloaded <a href="2_output/stopwords.xlsx" download="2_output/stopwords.xlsx">here</a>.
+
+### Column Description
+
++----------------+-----------------------------------------------------------------------------------------------------+
+| Column         | Description                                                                                         |
++:===============+:====================================================================================================+
+| `stop`         | The stop word                                                                                       |
++----------------+-----------------------------------------------------------------------------------------------------+
+| `stop_type`    | Type of the stop word (e.g. auditor, currency, ...)                                                 |
++----------------+-----------------------------------------------------------------------------------------------------+
+| `origin`       | Origin of the stop word:                                                                            |
+|                |                                                                                                     |
+|                | -   **L&M**: See Loughran & McDonalds (<https://sraf.nd.edu/textual-analysis/resources/#StopWords>) |
+|                |                                                                                                     |
+|                | -   **Own**: Additional stop words added to Loughran & McDonalds list                               |
++----------------+-----------------------------------------------------------------------------------------------------+
+
+### Example
 
 Below we show the first ten entries of this list:
 
@@ -246,6 +288,30 @@ We lemmatize our terms to account for different inflectional endings and plurals
 :::
 
 The full list can be downloaded <a href="2_output/lemma_list.xlsx" download="2_output/lemma_list.xlsx">here</a>.
+
+### Column Description
+
++------------------------+----------------------------------------------------------------------------------+
+| Column                 | Description                                                                      |
++:=======================+:=================================================================================+
+| `token`                | The token (word) to be lemmatized                                                |
++------------------------+----------------------------------------------------------------------------------+
+| `lemma`                | The original lemma                                                               |
++------------------------+----------------------------------------------------------------------------------+
+| `relemma`              | Indicator column if the original lemma is overwritten by the column: `lemma_new` |
++------------------------+----------------------------------------------------------------------------------+
+| `lemma_new`            | New lemma, if `relemma` equals 1                                                 |
++------------------------+----------------------------------------------------------------------------------+
+| `compound`             | Indicator column if the token is a compound word                                 |
++------------------------+----------------------------------------------------------------------------------+
+| `non_english`          | Indicator column if the token is a non English word                              |
++------------------------+----------------------------------------------------------------------------------+
+| `acronym_abbreviation` | Indicator column if the token is a acronym or abbreviation                       |
++------------------------+----------------------------------------------------------------------------------+
+| `monetary_unit`        | Indicator column if the token is a monetary unit                                 |
++------------------------+----------------------------------------------------------------------------------+
+
+### Example
 
 Below we show the first ten entries of this list:
 

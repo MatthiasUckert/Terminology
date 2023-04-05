@@ -13,12 +13,12 @@ Paper:
 The full term list can be downloaded
 <a href="2_output/term_list.xlsx" download="2_output/term_list.xlsx">here</a>.
 
-The concept list includes the following columns:
+## Column Description
 
 <table>
 <colgroup>
-<col style="width: 19%" />
-<col style="width: 80%" />
+<col style="width: 18%" />
+<col style="width: 81%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -28,43 +28,39 @@ The concept list includes the following columns:
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><code>cid</code></td>
-<td style="text-align: left;">The Concept Identifier</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;"><code>tid</code></td>
 <td style="text-align: left;">The Term Identifier</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><code>term</code></td>
 <td style="text-align: left;">The standardized Term</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><code>term_raw</code></td>
 <td style="text-align: left;">The raw Term</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><code>cat1</code></td>
 <td style="text-align: left;"><p><strong>Category 1:</strong> Indicator
-column to what class a concept belongs</p>
+column to which category a term belongs</p>
 <ul>
 <li><p><strong>FinA</strong>: Financial Accounting Concept</p></li>
 <li><p><strong>ManA</strong>: Managerial Accounting Concepts</p></li>
 <li><p><strong>BusA</strong>: Business Concepts</p></li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><strong><code>cat2</code></strong></td>
 <td style="text-align: left;"><p><strong>Category 2:</strong> Indicator
-column to what class a concept belongs</p>
+column to which category a term belongs</p>
 <ul>
 <li><strong>GAAP:</strong> Either an IFRS or US GAAP Concept</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><code>cat3</code></td>
 <td style="text-align: left;"><p><strong>Category 3:</strong> Indicator
-column to what class a concept belongs</p>
+column to which category a term belongs</p>
 <ul>
 <li><p><strong>IS</strong>: Income Statement Concepts</p></li>
 <li><p><strong>BS:</strong> Balance Sheet Concepts</p></li>
@@ -73,6 +69,8 @@ column to what class a concept belongs</p>
 </tr>
 </tbody>
 </table>
+
+## Example
 
 The table below shows the first ten terms of our term list:
 
@@ -291,7 +289,7 @@ BusA
 The full concept list can be downloaded
 <a href="2_output/concept_list.xlsx" download="2_output/concept_list.xlsx">here</a>.
 
-The concept list includes the following columns:
+## Column Description
 
 <table>
 <colgroup>
@@ -320,7 +318,7 @@ The concept list includes the following columns:
 <tr class="even">
 <td style="text-align: left;"><code>cat1</code></td>
 <td style="text-align: left;"><p><strong>Category 1:</strong> Indicator
-column to what class a concept belongs</p>
+column to which class a concept belongs</p>
 <ul>
 <li><p><strong>FinA</strong>: Financial Accounting Concept</p></li>
 <li><p><strong>ManA</strong>: Managerial Accounting Concepts</p></li>
@@ -330,7 +328,7 @@ column to what class a concept belongs</p>
 <tr class="odd">
 <td style="text-align: left;"><strong><code>cat2</code></strong></td>
 <td style="text-align: left;"><p><strong>Category 2:</strong> Indicator
-column to what class a concept belongs</p>
+column to which class a concept belongs</p>
 <ul>
 <li><strong>GAAP:</strong> Either an IFRS or US GAAP Concept</li>
 </ul></td>
@@ -338,7 +336,7 @@ column to what class a concept belongs</p>
 <tr class="even">
 <td style="text-align: left;"><code>cat3</code></td>
 <td style="text-align: left;"><p><strong>Category 3:</strong> Indicator
-column to what class a concept belongs</p>
+column to which class a concept belongs</p>
 <ul>
 <li><p><strong>IS</strong>: Income Statement Concepts</p></li>
 <li><p><strong>BS:</strong> Balance Sheet Concepts</p></li>
@@ -370,7 +368,7 @@ avg_sim (Scaled between 0-1)</td>
 
 The tables below show two example concepts for our concept list.
 
-## Concept 1: ABC Costing
+## Example Concept 1: ABC Costing
 
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -561,7 +559,7 @@ ManA
 </tbody>
 </table>
 
-## Concept 2: Accounts Payable
+## Example Concept 2: Accounts Payable
 
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -734,9 +732,9 @@ CF
 
 <div style="text-align: justify">
 
-In order to clean our term and concept list we use several additional
-input list, the complete pipeline can be seen in the Online Appendix to
-the paper (section 1).
+In order to clean our term and concept lists we use several additional
+input lists, the step-by-step description can be found in the Online
+Appendix to the paper (Section 1).
 
 </div>
 
@@ -752,10 +750,19 @@ different word combinations.
 
 </div>
 
-<http://www.tysto.com/uk-us-spelling-list.html>
+URL: <http://www.tysto.com/uk-us-spelling-list.html>
 
 The full list can be downloaded
 <a href="2_output/us_uk.xlsx" download="2_output/us_uk.xlsx">here</a>.
+
+### Column Description
+
+| Column | Description                      |
+|:-------|:---------------------------------|
+| `uk`   | Word written in British English  |
+| `us`   | Word written in American English |
+
+### Example
 
 Below we show the first ten entries of this list:
 
@@ -854,7 +861,7 @@ accouterments
 </tbody>
 </table>
 
-## Stylistic Differences due to hyphenations
+## Stylistic Differences
 
 <div style="text-align: justify">
 
@@ -870,6 +877,15 @@ current”).
 
 The full list can be downloaded
 <a href="2_output/split_terms.xlsx" download="2_output/split_terms.xlsx">here</a>.
+
+### Column Description
+
+| Column    | Description                                  |
+|:----------|:---------------------------------------------|
+| `unsplit` | Compound word written together               |
+| `us`      | Compound word separated by a space character |
+
+### Example
 
 Below we show the first ten entries of this list:
 
@@ -982,6 +998,45 @@ our raw sources.
 
 The full list can be downloaded
 <a href="2_output/stopwords.xlsx" download="2_output/stopwords.xlsx">here</a>.
+
+### Column Description
+
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Column</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>stop</code></td>
+<td style="text-align: left;">The stop word</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>stop_type</code></td>
+<td style="text-align: left;">Type of the stop word (e.g. auditor,
+currency, …)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>origin</code></td>
+<td style="text-align: left;"><p>Origin of the stop word:</p>
+<ul>
+<li><p><strong>L&amp;M</strong>: See Loughran &amp; McDonalds (<a
+href="https://sraf.nd.edu/textual-analysis/resources/#StopWords"
+class="uri">https://sraf.nd.edu/textual-analysis/resources/#StopWords</a>)</p></li>
+<li><p><strong>Own</strong>: Additional stop words added to Loughran
+&amp; McDonalds list</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+### Example
 
 Below we show the first ten entries of this list:
 
@@ -1138,6 +1193,21 @@ plurals (e.g., “assets” and “asset”) and remove all punctuation
 The full list can be downloaded
 <a href="2_output/lemma_list.xlsx" download="2_output/lemma_list.xlsx">here</a>.
 
+### Column Description
+
+| Column                 | Description                                                                      |
+|:-----------------------|:---------------------------------------------------------------------------------|
+| `token`                | The token (word) to be lemmatized                                                |
+| `lemma`                | The original lemma                                                               |
+| `relemma`              | Indicator column if the original lemma is overwritten by the column: `lemma_new` |
+| `lemma_new`            | New lemma, if `relemma` equals 1                                                 |
+| `compound`             | Indicator column if the token is a compound word                                 |
+| `non_english`          | Indicator column if the token is a non English word                              |
+| `acronym_abbreviation` | Indicator column if the token is a acronym or abbreviation                       |
+| `monetary_unit`        | Indicator column if the token is a monetary unit                                 |
+
+### Example
+
 Below we show the first ten entries of this list:
 
 <table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 10px; margin-left: auto; margin-right: auto;">
@@ -1165,13 +1235,7 @@ non_english
 acronym_abbreviation
 </th>
 <th style="text-align:right;">
-location_language
-</th>
-<th style="text-align:right;">
 monetary_unit
-</th>
-<th style="text-align:right;">
-proper_noun
 </th>
 </tr>
 </thead>
@@ -1201,12 +1265,6 @@ abort
 <td style="text-align:right;">
 0
 </td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -1233,12 +1291,6 @@ about
 <td style="text-align:right;">
 0
 </td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -1254,12 +1306,6 @@ above
 0
 </td>
 <td style="text-align:left;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
 0
 </td>
 <td style="text-align:right;">
@@ -1297,12 +1343,6 @@ abridge
 <td style="text-align:right;">
 0
 </td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -1318,12 +1358,6 @@ abroad
 0
 </td>
 <td style="text-align:left;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
 0
 </td>
 <td style="text-align:right;">
@@ -1361,12 +1395,6 @@ abs
 <td style="text-align:right;">
 0
 </td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -1382,12 +1410,6 @@ absence
 0
 </td>
 <td style="text-align:left;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
 0
 </td>
 <td style="text-align:right;">
@@ -1425,12 +1447,6 @@ absence
 <td style="text-align:right;">
 0
 </td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -1457,12 +1473,6 @@ absolute
 <td style="text-align:right;">
 0
 </td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -1478,12 +1488,6 @@ absolutism
 0
 </td>
 <td style="text-align:left;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
 0
 </td>
 <td style="text-align:right;">
